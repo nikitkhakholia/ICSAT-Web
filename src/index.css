@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bg-christ{
+  background: #183276;
+  color: #fff;
+}
+.christ-blue{
+  color: #183276;
+}
