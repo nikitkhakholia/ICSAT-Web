@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './Home/Home';
+import Base from './Base';
+import CallForPapers from './CallForPapers/CallForPapers';
+
+// eslint-disable-next-line
+const bootstrapCSS = require("bootstrap/dist/css/bootstrap.css")
+// eslint-disable-next-line
+const bootstrapJS = require("bootstrap/dist/js/bootstrap.js")
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Base>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/callForPapers' element={<CallForPapers/>}/>
+      <Route path='/dates' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
+    </Routes></Base>
+  </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
