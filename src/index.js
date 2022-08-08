@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
-import Home from './Home/Home';
+import Home from './pages/Home/Home';
 import Base from './Base';
-import CallForPapers from './CallForPapers/CallForPapers';
+import CallForPapers from './pages/CallForPapers/CallForPapers';
 
 // eslint-disable-next-line
 const bootstrapCSS = require("bootstrap/dist/css/bootstrap.css")

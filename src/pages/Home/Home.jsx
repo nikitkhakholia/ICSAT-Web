@@ -1,10 +1,17 @@
 import React from "react";
 
+import i1 from "../../assets/1.svg";
+import i2 from "../../assets/2.svg";
+import i3 from "../../assets/3.svg";
+import i4 from "../../assets/2.svg";
+import i5 from "../../assets/3.svg";
+import i6 from "../../assets/1.svg";
+import i7 from "../../assets/7.svg";
 export default function Home() {
   return (
     <div>
-      <div className="row m-0 p-0">
-        <div className="col m-0 p-0">
+      <div className="row m-0 p-0 p-5 justify-content-between align-items-center">
+        <div className="col-6 m-0 p-4 my-4">
           <h1>
             INTERNATIONAL CONFERENCE
             <br />
@@ -12,14 +19,18 @@ export default function Home() {
             <br />
             TECHNOLOGY IN POST COVID
           </h1>
-          <div className="row m-0 p-0">
-            <div className="col m-0 p-0">
-              <h5>Start</h5>
-              <p>09.03.2022</p>
-            </div>
-            <div className="col m-0 p-0">
-              <h5>End</h5>
-              <p>10.03.2022</p>
+          <div className="row m-0 p-0 text-light">
+            <div className="col-8 m-0 p-0">
+              <div className="row m-0 my-4 p-0 p-4 nk-blue-bg justify-content-between">
+                <div className="col m-0 p-0">
+                  <h5 className="m-0 p-0">Start</h5>
+                  <p className="m-0 p-0">09.03.2022</p>
+                </div>
+                <div className="col m-0 p-0 text-end">
+                  <h5 className="m-0 p-0">End</h5>
+                  <p className="m-0 p-0">10.03.2022</p>
+                </div>
+              </div>
             </div>
           </div>
           <p>
@@ -27,65 +38,107 @@ export default function Home() {
             industry. Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
-        <div className="col m-0 p-0">
-          <div className="row m-0 p-0">
-            <div className="col m-0 p-0">
+        <div className="col-4 m-0 p-0">
+          <div className="row m-0 p-4 text-light nk-green-bg justify-content-center align-items-end text-center">
+            <div className="col-2 m-0 p-0">
               <p>Days</p>
-              <h5>110:</h5>
+              <h5>110</h5>
             </div>
-            <div className="col m-0 p-0">
+            <div className="col-1 m-0 p-0">
+              <h5>:</h5>
+            </div>
+            <div className="col-2 m-0 p-0">
               <p>Hours</p>
-              <h5>550:</h5>
+              <h5>550</h5>
             </div>
-            <div className="col m-0 p-0">
+            <div className="col-1 m-0 p-0">
+              <h5>:</h5>
+            </div>
+            <div className="col-2 m-0 p-0">
               <p>Minutes</p>
-              <h5>350:</h5>
+              <h5>350</h5>
             </div>
-            <div className="col m-0 p-0">
+            <div className="col-1 m-0 p-0">
+              <h5>:</h5>
+            </div>
+            <div className="col-2 m-0 p-0">
               <p>Seconds</p>
               <h5>400</h5>
             </div>
           </div>
-
-          <div>Call for Papers</div>
+          <div className="row m-0 p-0 justify-content-end">
+            <div className="col-7 m-0 p-0 ">
+              <div className=" text-center border-0 m-0 my-5 p-0">
+                <div className="nk-blue-bg p-3 px-5 text-light">
+                  Call for Papers
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="row m-0 p-0">
-        <div className="col m-0 p-0">\</div>
-        <div className="col m-0 p-0">\</div>
-        <div className="col m-0 p-0">\</div>
-        <div className="col m-0 p-0">o</div>
-        <div className="col m-0 p-0">/</div>
-        <div className="col m-0 p-0">/</div>
-        <div className="col m-0 p-0">/</div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i1} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i2} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i3} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i4} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i5} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i6} alt="..." />
+        </div>
+        <div className="col m-0 p-0">
+          <img className="m-0" src={i7} alt="..." />
+        </div>
       </div>
 
       {/* presentation topics */}
-      <div className="row m-0 p-0">
-        <div className="col-3 m-0 p-0">
+      <div className="row m-0 p-0 text-light">
+        <div className="col-3 m-0 p-0 nk-bg-1 p-4">
           <h2>Presentation Topics</h2>
         </div>
         <div className="col-9 m-0 p-0">
           <div className="row m-0 p-0">
-            <div className="col m-0 p-0">
+            <div className="col m-0 p-4 nk-bg-2" style={{ minHeight: "11rem" }}>
               <h5>Artificial Topics</h5>
+            </div>
+            <div className="col m-0 p-4 nk-bg-3">
+              <h5>Deep Learning</h5>
+            </div>
+            <div className="col m-0 p-4 nk-bg-4">
+              <h5>Neural Networks</h5>
+            </div>
+            <div className="col m-0 p-4 nk-bg-5">
+              <h5>Data Science</h5>
+            </div>
+            <div className="col m-0 p-4 nk-bg-6">
+              <h5>Computational Science</h5>
+            </div>
+          </div>
+          <div className="row m-0 p-0">
+            <div className="col m-0 p-4 nk-bg-7" style={{ minHeight: "11rem" }}>
               <h5>Business Intelligence</h5>
             </div>
-            <div className="col m-0 p-0">
-              <h5>Deep Learning</h5>
+            <div className="col m-0 p-4 nk-bg-8">
               <h5>Analytics</h5>
             </div>
-            <div className="col m-0 p-0">
-              <h5>Neural Networks</h5>
+            <div className="col m-0 p-4 nk-bg-9">
               <h5>IoT</h5>
             </div>
-            <div className="col m-0 p-0">
-              <h5>Data Science</h5>
+            <div className="col m-0 p-4 nk-bg-10">
               <h5>Cloud Computing</h5>
             </div>
-            <div className="col m-0 p-0">
-              <h5>Computational Science</h5>
+            <div className="col m-0 p-4 nk-bg-11">
               <h5>Cognitive Science</h5>
             </div>
           </div>
@@ -93,25 +146,25 @@ export default function Home() {
       </div>
 
       {/* important dates */}
-      <div className="row m-0 p-0">
-        <div className="col-3 m-0 p-0">
+      <div className="row m-0 p-0 text-light">
+        <div className="col-3 m-0 p-4 nk-bg-7">
           <h2>Important Dates</h2>
         </div>
-        <div className="col-9 m-0 p-0">
-          <div className="row m-0 p-0">
+        <div className="col-9 m-0 p-4 nk-bg-1">
+          <div className="row m-0 p-4">
             <div className="col m-0 p-0">
-              <p>Last date for submission of Full Length paper</p>
-              <p>Date for Acceptance Notification</p>
-              <p>Last date for Camera Ready paper</p>
-              <p>Date for Registration</p>
-              <p>Conference Date</p>
+              <h5>Last date for submission of Full Length paper</h5>
+              <h5>Date for Acceptance Notification</h5>
+              <h5>Last date for Camera Ready paper</h5>
+              <h5>Date for Registration</h5>
+              <h5>Conference Date</h5>
             </div>
-            <div className="col m-0 p-0">
-              <p>31 Jan 2021</p>
-              <p>27 Feb 2021</p>
-              <p>27 Feb 2021</p>
-              <p>28 Feb 2021</p>
-              <p>05,06 March 2021</p>
+            <div className="col m-0 p-0 text-end">
+              <h5>31 Jan 2021</h5>
+              <h5>27 Feb 2021</h5>
+              <h5>27 Feb 2021</h5>
+              <h5>28 Feb 2021</h5>
+              <h5>05,06 March 2021</h5>
             </div>
           </div>
         </div>
@@ -119,10 +172,10 @@ export default function Home() {
 
       {/* keynote speakers */}
       <div>
-        <h2>Keynote Speakers</h2>
-        <div className="row m-0 p-0">
-          <div className="col m-0 p-0">International</div>
-          <div className="col m-0 p-0">
+        <div className="p-4"><h2>Keynote Speakers</h2></div>
+        <div className="row m-0 p-0 align-items-center " style={{height:"14rem"}}>
+          <div className="col m-0 p-0 text-center"><h3>International</h3></div>
+          <div className="col m-0 p-4 text-light nk-bg-3 h-100">
             <h5>Dr.Sheikh Iqbal Ahamed, Ph.D.</h5>
             <p>
               Director
@@ -134,7 +187,7 @@ export default function Home() {
               Marquette University, USA
             </p>
           </div>
-          <div className="col m-0 p-0">
+          <div className="col m-0 p-4 text-light nk-bg-4 h-100">
             <h5>Dr. S. S. Iyengar</h5>
             <p>
               ACM Fellow, IEEE Fellow, AAAS Fellow, <br />
@@ -143,7 +196,7 @@ export default function Home() {
               Florida International University, USA
             </p>
           </div>
-          <div className="col m-0 p-0">
+          <div className="col m-0 p-4 text-light nk-bg-2 h-100">
             <h5>Dr Said Eid Younes</h5>
             <p>
               Associate Professor <br />
@@ -153,8 +206,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="row m-0 p-0">
-          <div className="col m-0 p-0">
+        <div className="row m-0 mt-5 p-0 align-items-center " style={{height:"14rem"}}>
+          <div className="col m-0 p-4 text-light nk-bg-7 h-100">
             <h5>Dr. Subhrabrata Choudhury</h5>
             <p>
               Professor, <br />
@@ -164,7 +217,7 @@ export default function Home() {
               <br />
             </p>
           </div>
-          <div className="col m-0 p-0">
+          <div className="col m-0 p-4 text-light nk-bg-8 h-100" >
             <h5>Dr. Dilip Kumar Yadav</h5>
             <p>
               Professor,
@@ -174,7 +227,7 @@ export default function Home() {
               National Institute of Technology, Jamshedpur
             </p>
           </div>
-          <div className="col m-0 p-0">
+          <div className="col m-0 p-4 text-light nk-bg-1 h-100">
             <h5>Dr. Somashekhar S. Hiremath </h5>
             <p>
               Associate Professor
@@ -184,7 +237,7 @@ export default function Home() {
               Department of Mechanical Engineering, IIT Madras
             </p>
           </div>
-          <div className="col m-0 p-0">
+          <div className="col m-0 p-4 text-light nk-bg-11 h-100">
             <h5>Dr. Saroj Kr. Biswas</h5>
             <p>
               Assistant Professor, (Grade I)
@@ -194,7 +247,7 @@ export default function Home() {
               National Institute of Technology, Silchar
             </p>
           </div>
-          <div className="col m-0 p-0">National</div>
+          <div className="col m-0 p-0 text-center"><h3>National</h3></div>
         </div>
       </div>
 
@@ -243,7 +296,9 @@ export default function Home() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-0">Cloud Computing and Visualization</div>
+            <div className="col-4 m-0 p-0">
+              Cloud Computing and Visualization
+            </div>
             <div className="col m-0 p-0">
               Software As A Service (SaaS), Cloud Security and Privacy, Cloud
               Storage, Cloud Application Development, Industry-Specific Clouds,
