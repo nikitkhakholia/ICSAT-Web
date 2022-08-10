@@ -15,8 +15,8 @@ export default function Home() {
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
         style={{ minHeight: "80vh", backgroundImage: `url(${bg})` }}
       >
-        <div className="col-md-6 col-12 m-0 p-0 py-1">
-          <h1 className="" style={{ fontFamily: "Caslon", fontSize: "1.7rem" }}>
+        <div className="col-md-6 col-12 m-0 p-0 py-1 display-5">
+          <h1 className="" style={{ fontFamily: "Caslon",}}>
             INTERNATIONAL CONFERENCE
             <br />
             ON SUSTAINABLE AND AFFORDABLE
