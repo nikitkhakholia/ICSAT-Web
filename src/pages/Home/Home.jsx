@@ -7,7 +7,6 @@ import i4 from "../../assets/4.svg";
 import i5 from "../../assets/5.svg";
 import i6 from "../../assets/6.svg";
 import i7 from "../../assets/7.svg";
-import bg from "../../assets/bg.svg";
 export default function Home() {
   return (
     <div>
@@ -247,11 +246,11 @@ export default function Home() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">31 Jan 2021</h5>
-              <h5 className="mt-4">27 Feb 2021</h5>
-              <h5 className="mt-4">27 Feb 2021</h5>
-              <h5 className="mt-4">28 Feb 2021</h5>
-              <h5 className="mt-4">05,06 March 2021</h5>
+              <h5>31 Jan 2021</h5>
+              <h5>27 Feb 2021</h5>
+              <h5>27 Feb 2021</h5>
+              <h5>28 Feb 2021</h5>
+              <h5>05,06 March 2021</h5>
             </div>
           </div>
         </div>
@@ -259,16 +258,9 @@ export default function Home() {
 
       {/* keynote speakers */}
       <div>
-        <div className="p-4">
-          <h2>Keynote Speakers</h2>
-        </div>
-        <div
-          className="row m-0 p-0 align-items-center "
-          style={{ height: "14rem" }}
-        >
-          <div className="col m-0 p-0 text-center">
-            <h3>International</h3>
-          </div>
+        <div className="p-4"><h2>Keynote Speakers</h2></div>
+        <div className="row m-0 p-0 align-items-center " style={{height:"14rem"}}>
+          <div className="col m-0 p-0 text-center"><h3>International</h3></div>
           <div className="col m-0 p-4 text-light nk-bg-3 h-100">
             <h5>Dr.Sheikh Iqbal Ahamed, Ph.D.</h5>
             <p>
@@ -549,7 +541,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
+   
   );
 }
