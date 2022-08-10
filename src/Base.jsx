@@ -3,7 +3,7 @@ import React from "react";
 export default function Base({ children }) {
   return (
     <div className="">
-      {/* <header className="border-bottom border-dark" style={{ fontFamily: "Nunito" , position: "fixed", top:"0", width:"100%", background:"white"}}>
+      <header className="border-bottom border-dark" style={{ fontFamily: "Nunito" , position: "fixed", top:"0", width:"100%", background:"white"}}>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand p-4" href="/">
@@ -71,7 +71,7 @@ export default function Base({ children }) {
             </div>
           </div>
         </nav>
-      </header> */}
+      </header>
       <div style={{ minHeight: "100vh", fontFamily: "Playfair Display" }}>
         {children}
       </div>
