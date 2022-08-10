@@ -7,6 +7,7 @@ import i4 from "../../assets/2.svg";
 import i5 from "../../assets/3.svg";
 import i6 from "../../assets/1.svg";
 import i7 from "../../assets/7.svg";
+
 export default function Home() {
   return (
     <div>
@@ -451,6 +452,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
     </div>
+   
   );
 }
