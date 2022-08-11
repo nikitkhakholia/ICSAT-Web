@@ -8,22 +8,22 @@ import i5 from "../../assets/5.svg";
 import i6 from "../../assets/6.svg";
 import i7 from "../../assets/7.svg";
 import bg from "../../assets/bg.svg";
+import oman from "../../assets/OMAN.png";
 export default function Home() {
   return (
-    <div >
+    <div>
       <div
-        className="row m-0 p-0 px-5 justify-content-between align-items-center"
-        style={{ minHeight: "80vh", backgroundImage: `url(${bg})` }}
+        className="row m-0 p-0 p-5 justify-content-between align-items-center"
+        style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
       >
-        <div className="col-md-6 col-12 m-0 p-0 py-1 display-1">
+        <div className="col-12">
           <h1 className="font-weight-bold" style={{ fontFamily: "Caslon" }}>
-            INTERNATIONAL CONFERENCE
-            <br />
-            ON SUSTAINABLE AND AFFORDABLE
-            <br />
-            TECHNOLOGY IN POST COVID
+            INTERNATIONAL CONFERENCE ON SUSTAINABLE AND AFFORDABLE TECHNOLOGY IN
+            POST COVID (ICSAT - 2023)
           </h1>
-          <div className="row m-0 p-0 text-light text-bold">
+        </div>
+        <div className="col-md-6 col-12 m-0 p-0 py-1">
+          <div className="row m-0 p-0 text-light font-weight-bold">
             <div className="col-md-8 col-12 m-0 p-0">
               <div className="row m-0 my-2 p-0 p-4  nk-blue-bg justify-content-between">
                 <div className="col m-0 p-0">
@@ -78,6 +78,21 @@ export default function Home() {
                   Call for Papers
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 m-0 p-0">
+          <h4>In Association with</h4>
+          <div className="row m-0 p-0 align-items-center ">
+            <div className="col-1">
+              <img className="w-100" src={oman} alt="..." />
+            </div>
+            <div className="col m-0 p-2 font-weight-bold h5">
+              <p className="m-0 p-0">
+                Modern College of Business and Science
+                <br />
+                Muscat, Sultanate of Oman
+              </p>
             </div>
           </div>
         </div>
