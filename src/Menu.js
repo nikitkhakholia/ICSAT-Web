@@ -1,20 +1,21 @@
 import React from "react";
 
-export default function Base({ children }) {
+export default function Menu() {
   return (
-    <div className="">
-      <div
+    <div>
+      <header
         className="border-bottom border-dark"
         style={{
           fontFamily: "Nunito",
           position: "fixed",
           top: "0",
           width: "100%",
+          background: "white",
         }}
       >
-        <nav class="navbar navbar-expand-lg bg-white">
-          <div class="container-fluid">
-            <a class="navbar-brand p-4" href="/">
+        <nav className="navbar navbar-expand-lg">
+          <div className="container-fluid">
+            <a className="navbar-brand p-4" href="/">
               <img
                 src="https://christuniversity.in/images/logo.jpg"
                 alt="Christ (Deemed to be) University Logo"
@@ -22,21 +23,23 @@ export default function Base({ children }) {
                 className="d-inline-block align-text-top"
               />
             </a>
-
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-bs-target="#navbarSupportedContent3"
+              aria-controls="navbarSupportedContent3"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse d-flex"
+              id="navbarSupportedContent3"
+            >
               <div className="me-auto mb-2 mb-lg-0"></div>
-              <ul class="navbar-nav d-flex px-4">
+              <ul className="navbar-nav d-flex px-4">
                 <li className="nav-item px-2">
                   <a className="nav-link active" href="/">
                     Home
@@ -77,14 +80,7 @@ export default function Base({ children }) {
             </div>
           </div>
         </nav>
-      </div>
-
-      <div style={{ minHeight: "100vh", fontFamily: "Playfair Display" , marginTop: "8rem"}}>
-        {children}
-      </div>
-      <footer className="bg-christ">
-        <div className="p-4 text-center">CHRIST (Deemed To Be University)</div>
-      </footer>
+      </header>
     </div>
   );
 }
