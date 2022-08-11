@@ -38,12 +38,12 @@ export default function Base({ children }) {
               <div className="me-auto mb-2 mb-lg-0"></div>
               <ul class="navbar-nav d-flex px-4">
                 <li className="nav-item px-2">
-                  <a className="nav-link active" href="/">
+                  <a className="nav-link active" href="/icsat-23/build">
                     Home
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/callForPapers">
+                  <a className="nav-link" href="/icsat-23/build/callForPapers">
                     Call for Papers
                   </a>
                 </li>

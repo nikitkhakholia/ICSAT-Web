@@ -18,7 +18,7 @@ const bootstrapJS = require("bootstrap/dist/js/bootstrap.js")
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/icsat-23/build">
     <Base>
     <Routes>
       <Route path='/' element={<Home/>}/>
