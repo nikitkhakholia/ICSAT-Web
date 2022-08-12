@@ -7,8 +7,8 @@ export default function CallForPapers() {
   return (
     <>
 
-      <div className="row m-3 p-2  align-items-center">
-        <div className="col-7 m-0 p-0">
+      <div className="row m-3 p-2  align-items-center ">
+        <div className="col-md-7 col-12 m-0 p-0 ">
           <br />
           <br />
           <h1>
@@ -22,21 +22,17 @@ export default function CallForPapers() {
           </p>
         </div>
 
-        <div className="col-4 m-0 p-0">
-          <div className="row m-0 p-0">
-            <div className="p-0">
-              <img className="m-0" src={i1} alt="..." />
-            </div>
-          </div>
+        <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 ">         
+              <img className="m-0 w-100 justify-content-end" src={i1} alt="..." />        
         </div>
       </div>
 
-      <div className="row m-0 p-0">
-        <div className="col-7 p-0">
+      <div className="row m-0 p-0 ">
+        <div className="col-md-7  p-0 ">
         </div>
-        <div className="col-3  p-0">
+        <div className="col-md-3  p-0">
           <div className=" text-center border-0 m-0 p-0">
-            <div className="nk-blue-bg p-3 px-5 text-light">
+            <div className="nk-blue-bg p-3 px-5 text-light ">
               Submit Your Paper
             </div>
           </div>
@@ -46,14 +42,13 @@ export default function CallForPapers() {
      
 
       <div className="row m-0 mt-5 p-0 align-items-center" >
-        <div className="col m-0 p-0">
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-2 ">           
-              <p class="fs-3">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-2 ">           
+              <p class="fs-3 p-3" >
               Artificial Intelligence and Robotics
               </p>           
             </div>
-            <div className="col m-0 p-5 text-light nk-bg-12 h-105">
+            <div className="col p-5 text-light nk-bg-12 h-105">
               Vision and non-contact sensory systems, Embedded Systems,
               BioInspiration and Robotics: Walking And Climbing Robots, Robotic
               Automation and Outsourcing, Drones and drone applications, New
@@ -65,7 +60,8 @@ export default function CallForPapers() {
           </div>
 
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-7"> <p class="fs-3">Blockchain Technology</p></div>
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-7">
+            <p class="fs-3">Blockchain Technology</p></div>
             <div className="col m-0 p-5 text-light nk-bg-13 h-105">
               Blockchain in Artificial Intelligence, Machine Learning, cyber
               security, Identity and Access Management (IAM), Blockchain tools,
@@ -76,7 +72,7 @@ export default function CallForPapers() {
           </div>
 
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-9 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-9 ">
             <p class="fs-3"> Cloud Computing and Visualization </p>
             </div>
             <div className="col m-0 p-5 text-light nk-bg-14 h-105">
@@ -89,7 +85,7 @@ export default function CallForPapers() {
           </div>
 
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-6 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3 " >Cyber Security</p></div>
             <div className="col m-0 p-5 text-light nk-bg-15 h-105">
               Cryptographic Algorithms, Risk and Reputation Management,
@@ -111,7 +107,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-1 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-1 ">
             <p class="fs-3">Data Science</p></div>
             <div className="col m-0 p-5 text-light nk-bg-16 h-105">
               Agile Software Development and Testing, Software Testing, Big Data
@@ -122,7 +118,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-3">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-3">
             <p class="fs-3">E-Commerce</p></div>
             <div className="col m-0 p-5 text-light nk-bg-17 h-105">
               Machine Learning, Big Data, and Social Network Analysis, Sharing
@@ -137,7 +133,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-6 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3">High Performing Computer Architectures{" "}</p>
             </div>
             <div className="col m-0 p-5 text-light nk-bg-18 h-105">
@@ -150,7 +146,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-11 "><p class="fs-3">Image and Video Processing</p></div>
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-11 "><p class="fs-3">Image and Video Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-19 h-105">
               Action recognition, Aerial images, Anomaly detection, Automatic
               segmentation, Background subtraction, Cognitive information
@@ -160,7 +156,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-25 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-25 ">
             <p class="fs-3"> Pandemic Prepardness and Digital Technology</p>
             </div>
             <div className="col m-0 p-5 text-light nk-bg-20 h-105">
@@ -179,7 +175,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-26">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-26">
             <p class="fs-3">Pattern Recognization and Classification</p>
             </div>
 
@@ -194,7 +190,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-8 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-8 ">
             <p class="fs-3">Natural Language Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-22 h-105">
               Dialogue and Interactive Systems, Computational Social Science and
@@ -208,7 +204,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-30">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-30">
             <p class="fs-3">Software Engineering</p></div>
             <div className="col m-0 p-5 text-light nk-bg-23 h-105">
               Agile software development, Cloud and service-oriented computing,
@@ -222,7 +218,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0">
-            <div className="col-4 m-0 p-5 text-light nk-bg-31 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-31 ">
             <p class="fs-3">Internet of Things (IOT)</p></div>
             <div className="col m-0 p-5 text-light nk-bg-24 h-105">
               Smart Grid Systems, Smart Cities, IoT Architectures, Human-object
@@ -237,7 +233,6 @@ export default function CallForPapers() {
             </div>
           </div>
         </div>
-      </div>
 
     </>
   )
