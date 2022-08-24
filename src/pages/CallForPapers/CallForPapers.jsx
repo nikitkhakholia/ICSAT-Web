@@ -1,21 +1,27 @@
-import React from 'react'
-
+import React  from 'react'
+import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
 
 
 export default function CallForPapers() {
+  let navigate = useNavigate(); 
+  
+
   return (
     <>
 
       <div className="row m-3 p-2  align-items-center ">
-        <div className="col-md-7 col-12 m-0 p-0 ">
+        <div className="col-md-7 col-12 m-0 p-0" >
+                  <div>
           <br />
           <br />
           <h1>
+         
             Call for Papers
           </h1>
           <br />
           <br />
+          </div>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy
@@ -25,25 +31,28 @@ export default function CallForPapers() {
         <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 ">         
               <img className="m-0 w-100 justify-content-end" src={i1} alt="..." />        
         </div>
-      </div>
+     
 
       <div className="row m-0 p-0 ">
-        <div className="col-md-7  p-0 ">
+        <div className="col-7  p-0 ">
         </div>
-        <div className="col-md-3  p-0">
+        <div className="col-md-3  w-40  p-0 mt-3">
           <div className=" text-center border-0 m-0 p-0">
-            <div className="nk-blue-bg p-3 px-5 text-light ">
-              Submit Your Paper
+            <div className="nk-blue-bg p-3 px-5 text-light nk-btn" 
+             onClick={(e) => {
+              let path = `/`; 
+              navigate(path);
+            }}>
+              Submit Your Paper          
+
             </div>
           </div>
         </div>
       </div>
-
-     
-
+      </div>
       <div className="row m-0 mt-5 p-0 align-items-center" >
           <div className="row m-0 p-0">
-            <div className="col-md-4 m-0 p-5 text-light nk-bg-2 ">           
+            <div  className="col-md-4 m-0 p-5 text-light nk-bg-2 " >           
               <p class="fs-3 p-3" >
               Artificial Intelligence and Robotics
               </p>           
@@ -145,7 +154,7 @@ export default function CallForPapers() {
               applications, such as agent systems.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div  className="row m-0 p-0">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-11 "><p class="fs-3">Image and Video Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-19 h-105">
               Action recognition, Aerial images, Anomaly detection, Automatic
