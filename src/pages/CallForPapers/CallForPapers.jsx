@@ -43,7 +43,7 @@ export default function CallForPapers() {
               let path = `/`; 
               navigate(path);
             }}>
-              Submit Your Paper          
+              Submit Your Paper        
 
             </div>
           </div>
