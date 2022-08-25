@@ -1,6 +1,7 @@
 import React,{useEffect,useState,useRef} from "react";
 import { useNavigate } from "react-router-dom";
 
+
 import i1 from "../../assets/1.svg";
 import i2 from "../../assets/2.svg";
 import i3 from "../../assets/3.svg";
@@ -22,7 +23,7 @@ export default function Home() {
 
   const startTimer = ()=>
   {
-       const countdownDate = new Date('August 25,2023 00:00:00').getTime();
+       const countdownDate = new Date('March 15,2023 00:00:00').getTime();
         interval = setInterval(()=> {
         const now = new Date().getTime();
         const distance = countdownDate - now;
@@ -77,12 +78,12 @@ export default function Home() {
         </div>
        
         <div className="col-md m-0 p-0  ">       
-               <div className="row m-0  p-0 align-items-center ">
-            <div className="col-2">
+               <div className="row m-0 mt-3 p-0 align-items-center ">
+            <div className="col-md-2">
               <img  src={oman} alt="..." />
             </div>
-            <div className="col-md-9 m-0 p-2 font-weight-bold ">
-              <p className="m-0 p-0">
+            <div className="col-md-9 m-0 p-2  font-weight-bold ">
+              <p className=" m-0 p-0">
                 <b>Modern College of Business and Science</b>
                 <br />
                 <b> Muscat, Sultanate of Oman</b>
@@ -103,11 +104,11 @@ export default function Home() {
               <div className="row m-0 my-2 p-0 p-4  nk-blue-bg justify-content-between">
                 <div className="col m-0 p-0">
                   <h5 className="m-0 p-0">Start</h5>
-                  <p className="m-0 p-0 fs-3">09.03.2023</p>
+                  <p className="m-0 p-0 fs-3">15.03.2023</p>
                 </div>
                 <div className="col m-0 p-0 text-end">
                   <h5 className="m-0 p-0">End</h5>
-                  <p className="m-0 p-0 fs-3">10.03.2023</p>
+                  <p className="m-0 p-0 fs-3">16.03.2023</p>
                 </div>
               </div>
             </div>
@@ -157,11 +158,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-     
-
-       
+        </div>    
 
       </div>
 
@@ -192,7 +189,7 @@ export default function Home() {
           <img className="m-0" src={i7} alt="..." />
         </div>
       </div>
-      {/* <a href='/icsat-23/build/callForPapers#Iot'>ttt</a> */}
+     
       {/* presentation topics */}
       <div className="row m-0 p-0 text-light nk-bg-1 align-items-center">
         <div className="col-md-3 col-12 m-0 p-0 p-4">
@@ -200,7 +197,11 @@ export default function Home() {
         </div>
         <div className="col-md-9 col-12 m-0 p-0">
           <div className="row m-0 p-0 align-items-end">          
-            <div className="col m-0 p-4 nk-bg-2 ">
+            <div className="col m-0 p-4 nk-bg-2 " style={{cursor:"pointer"}}
+             onClick={(e) => {
+              let path = `/callForPapers/AI`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -209,11 +210,15 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Artificial Intelligence
+              Artificial Intelligence
                 
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-3 ">
+            <div className="col m-0 p-4 nk-bg-3 " style={{cursor:"pointer"}}
+             onClick={(e) => {
+              let path = `/callForPapers/BT`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -222,10 +227,14 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Deep &nbsp;&nbsp;&nbsp; Learning
+                Blockchain Technology
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-4 ">
+            <div className="col m-0 p-4 nk-bg-4 " style={{cursor:"pointer"}}
+            onClick={(e) => {
+              let path = `/callForPapers/CC`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -234,10 +243,14 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Neural Networks
+                Cloud Computing 
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-5">
+            <div className="col m-0 p-4 nk-bg-5" style={{cursor:"pointer"}}
+             onClick={(e) => {
+              let path = `/callForPapers/CS`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -246,10 +259,15 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Data Science
+                Cyber <br/>
+                Security
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-6">
+            <div className="col m-0 p-4 nk-bg-6" style={{cursor:"pointer"}}
+             onClick={(e) => {
+              let path = `/callForPapers/DS`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -258,24 +276,34 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Computational Science
+                Data <br/>
+                Science
               </h5>
             </div>
           </div>
-          <div className="row m-0 p-0 align-items-end">
-            <div className="col m-0 p-4 nk-bg-7">
+          <div className="row m-0 p-0 align-items-end ">
+            <div className="col m-0 p-4 nk-bg-7" style={{cursor:"pointer", height:"200px"}}
+             onClick={(e) => {
+              let path = `/callForPapers/EC`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
+
                   fontWeight: "bold",
                   fontSize: "20px",
                   letterSpacing: "0.05rem",
                   paddingTop: "5rem",
                 }}
               >
-                Business Intelligence
+                E-Commerce
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-8">
+            <div className="col m-0 p-4 nk-bg-8" style={{cursor:"pointer", height:"200px"}}
+             onClick={(e) => {
+              let path = `/callForPapers/HPCA`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -284,22 +312,14 @@ export default function Home() {
                   paddingTop: "6.5rem",
                 }}
               >
-                Analytics
+                Computer Architectures
               </h5>
             </div>
-            <div  className="col m-0 p-4 nk-bg-9">
-              <h5
-                style={{
-                  fontWeight: "bold",
-                  fontSize: "20px",
-                  letterSpacing: "0.05rem",
-                  paddingTop: "6.5rem",
-                }}
-              >
-                IoT
-              </h5>
-            </div>
-            <div className="col m-0 p-4 nk-bg-10">
+            <div  className="col m-0 p-4 nk-bg-9" style={{cursor:"pointer", height:"200px"}}
+            onClick={(e) => {
+              let path = `/callForPapers/IMP`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -308,10 +328,30 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Cloud Computing
+                Image and Video Processing
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-11">
+            <div className="col m-0 p-4 nk-bg-10" style={{cursor:"pointer", height:"200px"}}
+            onClick={(e) => {
+              let path = `/callForPapers/PPD`; 
+              navigate(path);
+            }}>
+              <h5
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                  letterSpacing: "0.05rem",
+                  paddingTop: "4rem",
+                }}
+              >
+                Pandemic Prepardness and Digital Technology
+              </h5>
+            </div>
+            <div className="col m-0 p-4 nk-bg-11" style={{cursor:"pointer", height:"200px"}}
+             onClick={(e) => {
+              let path = `/callForPapers/PRC`; 
+              navigate(path);
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -320,7 +360,7 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Cognitive Science
+                Pattern Recognization and Classification
               </h5>
             </div>
           </div>
@@ -340,7 +380,7 @@ export default function Home() {
               </h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">31 Jan 2021</h5>
+              <h5 className="mt-4">To be decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -348,7 +388,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Acceptance Notification</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">27 Feb 2021</h5>
+              <h5 className="mt-4">To be decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -356,7 +396,7 @@ export default function Home() {
               <h5 className="mt-4">Last date for Camera Ready paper</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">27 Feb 2021</h5>
+              <h5 className="mt-4">To be decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -364,7 +404,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Registration</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">28 Feb 2021</h5>
+              <h5 className="mt-4">To be decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -372,60 +412,62 @@ export default function Home() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">05,06 March 2021</h5>
+              <h5 className="mt-4">To be decided</h5>
             </div>
           </div>
         </div>
       </div>
 
       {/* keynote speakers */}
-      <div style={{display:"none"}}>
+      <div>
         <div className="p-4">
-          <h2>Keynote Speakers</h2>
+         
         </div>
-        <div
+        <div id="experts"
           className="row m-0 p-0 align-items-center "
           // style={{ height: "14rem" }}
         >
           <div className="col-md-3 col-12 m-0 p-0 text-center">
-            <h3>International</h3>
+            <h3>EXPERTS</h3>
           </div>
           <div className="col-md-9 col-12 m-0 p-0">
             <div className="row m-0 p-0">
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-3 h-100">
-                <h5>Dr.Sheikh Iqbal Ahamed, Ph.D.</h5>
+                <h5>Prof Dharm Singh</h5>
                 <p>
-                  Director
+                  Professor and UNESCO Chairholder
                   <br />
-                  Ubicomp Research Lab and Professor and Chair
+                  Secure High-performance Computing for Higher Educ and Res
                   <br />
-                  Department of Computer Science
+                  Namibia University of Science and Technology, Namibia
                   <br />
-                  Marquette University, USA
+                  Email: dsingh@nust.na
                 </p>
               </div>
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-4 h-100">
-                <h5>Dr. S. S. Iyengar</h5>
+                <h5>Dr. Mohammad S Khan   </h5>
                 <p>
-                  ACM Fellow, IEEE Fellow, AAAS Fellow, <br />
-                  Distinguished University Professor <br />
-                  School of Computing <br />
-                  Florida International University, USA
+                Director of  Network Science and Analysis Lab (NSAL) <br />
+                Department of Computing <br />
+                East Tennessee State University <br />
+                Johnson City, TN  37614-1266, USA <br/>
+                Email: adhoc.khan@gmail.com
+
                 </p>
               </div>
-              <div className="col-md-4 col m-0 p-4 text-light nk-bg-2 h-100">
-                <h5>Dr Said Eid Younes</h5>
+              <div className="col-md-4 col m-0 p-4 text-light nk-bg-2 h-102">
+                <h5>Prof. Dr. Mario Jose Divan</h5>
                 <p>
-                  Associate Professor <br />
-                  Department of Information Technology <br />
-                  College of Engineering <br />
-                  Univrsity of Kalamoon, SYRIA
+                Sr. Solutions Architect and Service Lead <br />
+                IOTG HEC Services - Intel Corporation <br />
+                Hillsboro, Oregon, USA. <br />
+                Email: mario.jose.divan.koller@intel.com 
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           className="row m-0 mt-5 p-0 align-items-center "
           // style={{ height: "14rem" }}
         >
@@ -476,7 +518,7 @@ export default function Home() {
           <div className="col-md-3 col-12 m-0 p-0 text-center">
             <h3>National</h3>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

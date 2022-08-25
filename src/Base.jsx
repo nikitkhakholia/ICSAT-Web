@@ -15,16 +15,7 @@ export default function Base({ children }) {
       >
         <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid">
-            {/* <a class="navbar-brand p-4" href="/">
-              <img
-                src="https://christuniversity.in/images/logo.jpg"
-                alt="Christ (Deemed to be) University Logo"
-                width="200"
-                className="d-inline-block align-text-top"
-              />
-            </a> */}
-
-            <button
+              <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -44,33 +35,33 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/icsat-23/build/callForPapers">
+                  <a className="nav-link" href="/icsat-23/build/callForPapers/mainpage">
                     Call for Papers
                   </a>
                 </li>
 
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/registration">
+                  <a className="nav-link" href="/icsat-23/build/">
                     Registration
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/committees">
+                  <a className="nav-link" href="/icsat-23/build/">
                     Committees
                   </a>
                 </li>
-                {/* <li className="nav-item  px-2">
-                  <a className="nav-link" href="keynoteSpeakers">
-                    Keynote Speakers
+                <li className="nav-item  px-2">
+                  <a className="nav-link" href="#experts">
+                    Experts
                   </a>
-                </li> */}
+                </li>
                 <li className="nav-item  px-2">
                   <a className="nav-link" href="#dates">
                     Dates
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="aboutUs">
+                  <a className="nav-link" href="/icsat-23/build/">
                     About Us
                   </a>
                 </li>

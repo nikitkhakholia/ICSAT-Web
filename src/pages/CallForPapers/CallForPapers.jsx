@@ -1,28 +1,40 @@
-import React  from 'react'
+import React ,{useEffect} from 'react'
 import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
+import { scroller } from "react-scroll";
+
+import { useLocation } from "react-router-dom";
 
 
 export default function CallForPapers() {
-  let navigate = useNavigate();  
+  let navigate = useNavigate(); 
+  const location = useLocation();
+  const id = location.pathname.split("/")[2]; 
+  useEffect(() => 
+  {
+    scrollToSection();   
+  });
+
+ const scrollToSection = () => {
+    scroller.scrollTo(id);
+  };
 
   return (
     <>
-
-      <div className="row m-3 p-2 mt-5 align-items-center ">
-        <div className="col-md-7 col-12 m-0 p-0" >
+      <div className="row m-3 p-2 mt-5 align-items-center " id="mainpage" >
+        <div className="col-md-7  mt-5  col-12 m-0 p-0" >
                   <div>
           <br />
           <br />
-          <h1>         
+          <h1>       
             Call for Papers
           </h1>
           <br />
           <br />
           </div>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
+            {/* Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy */}
           </p>
         </div>
 
@@ -41,14 +53,14 @@ export default function CallForPapers() {
               let path = `/`; 
               navigate(path);
             }}>
-              Submit Your Paper        
+              Submit Your Paper       
 
             </div>
           </div>
         </div>
       </div>
       </div>
-      <div className="row m-0 mt-5 p-0 align-items-center" >
+      <div className="row m-0 mt-5 p-0 align-items-center"  class="AI">
           <div className="row m-0 p-0">
             <div  className="col-md-4 m-0 p-5 text-light nk-bg-2 " >           
               <p class="fs-3 p-3" >
@@ -66,7 +78,7 @@ export default function CallForPapers() {
             </div>
           </div>
 
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="BT">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-7">
             <p class="fs-3">Blockchain Technology</p></div>
             <div className="col m-0 p-5 text-light nk-bg-13 h-105">
@@ -78,7 +90,7 @@ export default function CallForPapers() {
             </div>
           </div>
 
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="CC"  >
             <div className="col-md-4 m-0 p-5 text-light nk-bg-9 ">
             <p class="fs-3"> Cloud Computing and Visualization </p>
             </div>
@@ -91,7 +103,7 @@ export default function CallForPapers() {
             </div>
           </div>
 
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="CS">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3 " >Cyber Security</p></div>
             <div className="col m-0 p-5 text-light nk-bg-15 h-105">
@@ -113,7 +125,7 @@ export default function CallForPapers() {
               and Countermeasures.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="DS" >
             <div className="col-md-4 m-0 p-5 text-light nk-bg-1 ">
             <p class="fs-3">Data Science</p></div>
             <div className="col m-0 p-5 text-light nk-bg-16 h-105">
@@ -124,7 +136,7 @@ export default function CallForPapers() {
               Learning and Neural Networks.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="EC">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-3">
             <p class="fs-3">E-Commerce</p></div>
             <div className="col m-0 p-5 text-light nk-bg-17 h-105">
@@ -139,7 +151,7 @@ export default function CallForPapers() {
               and Entrepreneurship.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="HPCA">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3">High Performing Computer Architectures{" "}</p>
             </div>
@@ -152,7 +164,7 @@ export default function CallForPapers() {
               applications, such as agent systems.
             </div>
           </div>
-          <div  className="row m-0 p-0">
+          <div  className="row m-0 p-0" id="IMP">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-11 "><p class="fs-3">Image and Video Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-19 h-105">
               Action recognition, Aerial images, Anomaly detection, Automatic
@@ -162,7 +174,7 @@ export default function CallForPapers() {
               Visual content analysis.{" "}
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="PPDT">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-25 ">
             <p class="fs-3"> Pandemic Prepardness and Digital Technology</p>
             </div>
@@ -181,7 +193,7 @@ export default function CallForPapers() {
               experiences and innovations.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="PRC">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-26">
             <p class="fs-3">Pattern Recognization and Classification</p>
             </div>
@@ -196,7 +208,7 @@ export default function CallForPapers() {
               Classification Mathematical Image Modelling.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="NLP">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-8 ">
             <p class="fs-3">Natural Language Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-22 h-105">
@@ -210,7 +222,7 @@ export default function CallForPapers() {
               Cognitive Modeling and Psycholinguistics.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="SE">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-30">
             <p class="fs-3">Software Engineering</p></div>
             <div className="col m-0 p-5 text-light nk-bg-23 h-105">
@@ -224,7 +236,7 @@ export default function CallForPapers() {
               Tools and environments.
             </div>
           </div>
-          <div className="row m-0 p-0">
+          <div className="row m-0 p-0" id="Iot">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-31 ">
             <p class="fs-3">Internet of Things (IOT)</p></div>
             <div className="col m-0 p-5 text-light nk-bg-24 h-105">
