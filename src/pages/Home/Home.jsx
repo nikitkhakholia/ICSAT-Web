@@ -60,13 +60,12 @@ export default function Home() {
     <div>
       <div
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
-        style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
+        style={{ minHeight: "60vh", backgroundImage: `url(${bg})`}}
       >
-         <div className="row m-0 p-0">
+       <div className="row m-0 p-0">
         <div className="col-8 m-0 p-0">
         <div className="row m-0 p-0 ">
-        <div className="col-12 m-0 p-0">
-          <h4>Conducted By</h4>
+        <div className="col-12 m-0 p-0">          
           <img        
                 src="https://christuniversity.in/images/logo.jpg"
                 alt="Christ (Deemed to be) University Logo"
@@ -77,16 +76,16 @@ export default function Home() {
         </div>
         </div>
        
-        <div className="col-md m-0 mt-4 p-0  ">       
+        <div className="col-md m-0 p-0  ">       
                <div className="row m-0  p-0 align-items-center ">
             <div className="col-2">
               <img  src={oman} alt="..." />
             </div>
-            <div className="col-md-9 m-0 p-2 font-weight-bold h5">
+            <div className="col-md-9 m-0 p-2 font-weight-bold ">
               <p className="m-0 p-0">
-                Modern College of Business and Science
+                <b>Modern College of Business and Science</b>
                 <br />
-                Muscat, Sultanate of Oman
+                <b> Muscat, Sultanate of Oman</b>
               </p>
             </div>
           </div>    

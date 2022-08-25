@@ -10,6 +10,7 @@ export default function Base({ children }) {
           position: "fixed",
           top: "0",
           width: "100%",
+          zIndex:"1"
         }}
       >
         <nav class="navbar navbar-expand-lg bg-white">
