@@ -14,14 +14,14 @@ export default function Base({ children }) {
       >
         <nav class="navbar navbar-expand-lg bg-white">
           <div class="container-fluid">
-            <a class="navbar-brand p-4" href="/">
+            {/* <a class="navbar-brand p-4" href="/">
               <img
                 src="https://christuniversity.in/images/logo.jpg"
                 alt="Christ (Deemed to be) University Logo"
                 width="200"
                 className="d-inline-block align-text-top"
               />
-            </a>
+            </a> */}
 
             <button
               class="navbar-toggler"
@@ -79,7 +79,7 @@ export default function Base({ children }) {
         </nav>
       </div>
 
-      <div style={{ minHeight: "100vh", fontFamily: "Playfair Display" , marginTop: "8rem"}}>
+      <div style={{ minHeight: "100vh", fontFamily: "Playfair Display" , marginTop: "2rem"}}>
         {children}
       </div>
       <footer className="bg-christ">

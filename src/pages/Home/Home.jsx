@@ -9,6 +9,7 @@ import i5 from "../../assets/5.svg";
 import i6 from "../../assets/6.svg";
 import i7 from "../../assets/7.svg";
 import bg from "../../assets/bg.svg";
+import si from "../../assets/callpapers.svg";
 import oman from "../../assets/OMAN.png";
 
 export default function Home() {
@@ -61,10 +62,42 @@ export default function Home() {
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
         style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
       >
-        <div className="col-12">
+         <div className="row m-0 p-0">
+        <div className="col-8 m-0 p-0">
+        <div className="row m-0 p-0 ">
+        <div className="col-12 m-0 p-0">
+          <h4>Conducted By</h4>
+          <img        
+                src="https://christuniversity.in/images/logo.jpg"
+                alt="Christ (Deemed to be) University Logo"
+                width="208" 
+                className="d-inline-block align-text-top"
+              />
+        </div>
+        </div>
+        </div>
+       
+        <div className="col-md m-0 mt-4 p-0  ">       
+               <div className="row m-0  p-0 align-items-center ">
+            <div className="col-2">
+              <img  src={oman} alt="..." />
+            </div>
+            <div className="col-md-9 m-0 p-2 font-weight-bold h5">
+              <p className="m-0 p-0">
+                Modern College of Business and Science
+                <br />
+                Muscat, Sultanate of Oman
+              </p>
+            </div>
+          </div>    
+        </div>
+        </div>
+        <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Caslon" }}>
-            INTERNATIONAL CONFERENCE ON SUSTAINABLE AND AFFORDABLE TECHNOLOGY IN
-            POST COVID (ICSAT - 2023)
+            {/* INTERNATIONAL CONFERENCE ON SUSTAINABLE AND AFFORDABLE TECHNOLOGY IN
+            POST COVID (ICSAT - 2023) */}
+            COMPUTATIONAL SCIENCES AND SUSTAINABLE  
+            TECHNOLOGIES (ICCSST - 2023) 
           </h1>
         </div>
         <div className="col-md-6 col-12 m-0 p-0 py-1">
@@ -73,11 +106,11 @@ export default function Home() {
               <div className="row m-0 my-2 p-0 p-4  nk-blue-bg justify-content-between">
                 <div className="col m-0 p-0">
                   <h5 className="m-0 p-0">Start</h5>
-                  <p className="m-0 p-0 fs-3">09.03.2022</p>
+                  <p className="m-0 p-0 fs-3">09.03.2023</p>
                 </div>
                 <div className="col m-0 p-0 text-end">
                   <h5 className="m-0 p-0">End</h5>
-                  <p className="m-0 p-0 fs-3">10.03.2022</p>
+                  <p className="m-0 p-0 fs-3">10.03.2023</p>
                 </div>
               </div>
             </div>
@@ -131,40 +164,15 @@ export default function Home() {
 
      
 
-        <div className="row m-0 p-0">
-        <div className="col-10 m-0 p-0">
-        <div className="row m-0 p-0 ">
-        <div className="col-12 m-0 p-0">
-          <h4>In Association with</h4>
-          <div className="row m-0  p-0 align-items-center ">
-            <div className="col-1">
-              <img  src={oman} alt="..." />
-            </div>
-            <div className="col-md-3 m-0 p-2 font-weight-bold h5">
-              <p className="m-0 p-0">
-                Modern College of Business and Science
-                <br />
-                Muscat, Sultanate of Oman
-              </p>
-            </div>
-          </div>         
-        </div>
-        </div>
-        </div>
        
-        <div className="col-md m-0 mt-4 p-0  ">
-        <img        
-                src="https://christuniversity.in/images/logo.jpg"
-                alt="Christ (Deemed to be) University Logo"
-                width="208" 
-                className="d-inline-block align-text-top"
-              />
-        </div>
-        </div>
 
       </div>
 
-      <div className="row m-0 p-0">
+      <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 " style={{display:"none"}}>         
+              <img className="m-0 w-100 justify-content-end" src={si} alt="..." />        
+        </div>
+
+      <div className="row m-0 p-0" >
         <div className="col m-0 p-0">
           <img className="m-0" src={i1} alt="..." />
         </div>

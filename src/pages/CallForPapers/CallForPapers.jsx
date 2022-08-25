@@ -4,8 +4,7 @@ import i1 from "../../assets/callpapers.svg";
 
 
 export default function CallForPapers() {
-  let navigate = useNavigate(); 
-  
+  let navigate = useNavigate();  
 
   return (
     <>
