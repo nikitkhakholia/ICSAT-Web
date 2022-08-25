@@ -59,13 +59,13 @@ export default function Base({ children }) {
                     Committees
                   </a>
                 </li>
-                <li className="nav-item  px-2">
+                {/* <li className="nav-item  px-2">
                   <a className="nav-link" href="keynoteSpeakers">
                     Keynote Speakers
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/dates">
+                  <a className="nav-link" href="#dates">
                     Dates
                   </a>
                 </li>

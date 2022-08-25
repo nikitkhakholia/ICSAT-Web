@@ -153,6 +153,14 @@
   font-size: "50px";
   
 }
+@font-face {
+  font-family: Caslon;
+  src: url(../public/CaslonBold.ttf);
+}
 
+h3 {
+  font-family: myFirstFont;
+ color:black;
+}
 
 

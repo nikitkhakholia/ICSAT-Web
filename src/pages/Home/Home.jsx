@@ -93,8 +93,6 @@ export default function Home() {
         </div>
         <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Caslon" }}>
-            {/* INTERNATIONAL CONFERENCE ON SUSTAINABLE AND AFFORDABLE TECHNOLOGY IN
-            POST COVID (ICSAT - 2023) */}
             COMPUTATIONAL SCIENCES AND SUSTAINABLE  
             TECHNOLOGIES (ICCSST - 2023) 
           </h1>
@@ -330,7 +328,7 @@ export default function Home() {
       </div>
 
       {/* important dates */}
-      <div className="row m-0 p-0 text-light align-items-center nk-bg-7">
+      <div id="dates" className="row m-0 p-0 text-light align-items-center nk-bg-7">
         <div className="col-md-3 col-12 m-0 p-4 ">
           <h2>Important Dates</h2>
         </div>

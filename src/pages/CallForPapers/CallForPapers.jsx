@@ -9,13 +9,12 @@ export default function CallForPapers() {
   return (
     <>
 
-      <div className="row m-3 p-2  align-items-center ">
+      <div className="row m-3 p-2 mt-5 align-items-center ">
         <div className="col-md-7 col-12 m-0 p-0" >
                   <div>
           <br />
           <br />
-          <h1>
-         
+          <h1>         
             Call for Papers
           </h1>
           <br />
