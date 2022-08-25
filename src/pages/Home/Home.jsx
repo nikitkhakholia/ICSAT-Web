@@ -293,7 +293,7 @@ export default function Home() {
                   fontWeight: "bold",
                   fontSize: "20px",
                   letterSpacing: "0.05rem",
-                  paddingTop: "5rem",
+                  paddingTop: "7rem",
                 }}
               >
                 E-Commerce
@@ -357,7 +357,7 @@ export default function Home() {
                   fontWeight: "bold",
                   fontSize: "20px",
                   letterSpacing: "0.05rem",
-                  paddingTop: "5rem",
+                  paddingTop: "4rem",
                 }}
               >
                 Pattern Recognization and Classification
