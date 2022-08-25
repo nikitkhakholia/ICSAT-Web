@@ -149,7 +149,7 @@ export default function Home() {
                   className="nk-blue-bg p-3 px-5 text-light nk-btn "
                   
                   onClick={(e) => {
-                    let path = `/callForPapers`; 
+                    let path = `/callForPapers/mainpage`; 
                     navigate(path);
                   }}
                 >
