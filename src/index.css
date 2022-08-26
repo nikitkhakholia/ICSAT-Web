@@ -6,7 +6,10 @@
 .christ-blue {
   color: #183276;
 }
+.pointer{
+  cursor: pointer;
 
+}
 .nk-btn {
   letter-spacing: .05rem;
   cursor: pointer;

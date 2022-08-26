@@ -1,4 +1,4 @@
-import React,{useEffect,useState,useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import i1 from "../../assets/1.svg";
@@ -13,40 +13,37 @@ import si from "../../assets/callpapers.svg";
 import oman from "../../assets/OMAN.png";
 
 export default function Home() {
-  const [timerDays,setTimerDays] = useState('00');
-  const [timerHours,setTimerHours] = useState('00');
-  const [timerMinutes,setTimerMinutes] = useState('00');
-  const [timerSeconds,setTimerSeconds] = useState('00');
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
 
   let interval = useRef();
 
-  const startTimer = ()=>
-  {
-       const countdownDate = new Date('August 25,2023 00:00:00').getTime();
-        interval = setInterval(()=> {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        if(distance < 0)
-        {
-          clearInterval(interval.current);
+  const startTimer = () => {
+    const countdownDate = new Date("August 25,2023 00:00:00").getTime();
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        }else
-        {
-          setTimerDays(days);
-          setTimerHours(hours);
-          setTimerMinutes(minutes);
-          setTimerSeconds(seconds);
-        }
-
-       },1000);
+      if (distance < 0) {
+        clearInterval(interval.current);
+      } else {
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    }, 1000);
   };
 
-  useEffect (()=> {
+  useEffect(() => {
     startTimer();
     return () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -54,50 +51,49 @@ export default function Home() {
     };
   });
 
-  let navigate = useNavigate(); 
- 
+  let navigate = useNavigate();
+
   return (
     <div>
       <div
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
         style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
       >
-         <div className="row m-0 p-0">
-        <div className="col-8 m-0 p-0">
-        <div className="row m-0 p-0 ">
-        <div className="col-12 m-0 p-0">
-          <h4>Conducted By</h4>
-          <img        
-                src="https://christuniversity.in/images/logo.jpg"
-                alt="Christ (Deemed to be) University Logo"
-                width="208" 
-                className="d-inline-block align-text-top"
-              />
-        </div>
-        </div>
-        </div>
-       
-        <div className="col-md m-0 mt-4 p-0  ">       
-               <div className="row m-0  p-0 align-items-center ">
-            <div className="col-2">
-              <img  src={oman} alt="..." />
+        <div className="row m-0 p-0">
+          <div className="col-8 m-0 p-0">
+            <div className="row m-0 p-0 ">
+              <div className="col-12 m-0 p-0">
+                <h4>Conducted By</h4>
+                <img
+                  src="https://christuniversity.in/images/logo.jpg"
+                  alt="Christ (Deemed to be) University Logo"
+                  width="208"
+                  className="d-inline-block align-text-top"
+                />
+              </div>
             </div>
-            <div className="col-md-9 m-0 p-2 font-weight-bold h5">
-              <p className="m-0 p-0">
-                Modern College of Business and Science
-                <br />
-                Muscat, Sultanate of Oman
-              </p>
+          </div>
+
+          <div className="col-md m-0 mt-4 p-0  ">
+            <div className="row m-0  p-0 align-items-center ">
+              <div className="col-2">
+                <img src={oman} alt="..." />
+              </div>
+              <div className="col-md-9 m-0 p-2 font-weight-bold h5">
+                <p className="m-0 p-0">
+                  Modern College of Business and Science
+                  <br />
+                  Muscat, Sultanate of Oman
+                </p>
+              </div>
             </div>
-          </div>    
-        </div>
+          </div>
         </div>
         <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Caslon" }}>
             {/* INTERNATIONAL CONFERENCE ON SUSTAINABLE AND AFFORDABLE TECHNOLOGY IN
             POST COVID (ICSAT - 2023) */}
-            COMPUTATIONAL SCIENCES AND SUSTAINABLE  
-            TECHNOLOGIES (ICCSST - 2023) 
+            COMPUTATIONAL SCIENCES AND SUSTAINABLE TECHNOLOGIES (ICCSST - 2023)
           </h1>
         </div>
         <div className="col-md-6 col-12 m-0 p-0 py-1">
@@ -149,9 +145,8 @@ export default function Home() {
               <div className=" text-center border-0 m-0 my-2 p-0">
                 <div
                   className="nk-blue-bg p-3 px-5 text-light nk-btn "
-                  
                   onClick={(e) => {
-                    let path = `/callForPapers`; 
+                    let path = `/callForPapers`;
                     navigate(path);
                   }}
                 >
@@ -161,18 +156,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-     
-
-       
-
       </div>
 
-      <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 " style={{display:"none"}}>         
-              <img className="m-0 w-100 justify-content-end" src={si} alt="..." />        
-        </div>
+      <div
+        className="col-md-5 col-12 m-0 p-0 bg-white h-100 "
+        style={{ display: "none" }}
+      >
+        <img className="m-0 w-100 justify-content-end" src={si} alt="..." />
+      </div>
 
-      <div className="row m-0 p-0" >
+      <div className="row m-0 p-0">
         <div className="col m-0 p-0">
           <img className="m-0" src={i1} alt="..." />
         </div>
@@ -202,8 +195,13 @@ export default function Home() {
           <h2>Presentation Topics </h2>
         </div>
         <div className="col-md-9 col-12 m-0 p-0">
-          <div className="row m-0 p-0 align-items-end">          
-            <div className="col m-0 p-4 nk-bg-2 ">
+          <div className="row m-0 p-0 align-items-end">
+            <div
+              className="col m-0 p-4 nk-bg-2 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=AIAndRobotics");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -213,10 +211,12 @@ export default function Home() {
                 }}
               >
                 Artificial Intelligence
-                
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-3 ">
+            <div className="col m-0 p-4 nk-bg-3 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=DeepLearning");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -228,7 +228,10 @@ export default function Home() {
                 Deep &nbsp;&nbsp;&nbsp; Learning
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-4 ">
+            <div className="col m-0 p-4 nk-bg-4 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=NeuralNetworks");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -240,7 +243,10 @@ export default function Home() {
                 Neural Networks
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-5">
+            <div className="col m-0 p-4 nk-bg-5 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=DataScience");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -252,7 +258,10 @@ export default function Home() {
                 Data Science
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-6">
+            <div className="col m-0 p-4 nk-bg-6 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=DeepLearning");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -266,7 +275,10 @@ export default function Home() {
             </div>
           </div>
           <div className="row m-0 p-0 align-items-end">
-            <div className="col m-0 p-4 nk-bg-7">
+            <div className="col m-0 p-4 nk-bg-7 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=DeepLearning");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -278,7 +290,10 @@ export default function Home() {
                 Business Intelligence
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-8">
+            <div className="col m-0 p-4 nk-bg-8 pointer"
+            onClick={() => {
+              navigate("/callForPapers?show=DeepLearning");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -290,7 +305,9 @@ export default function Home() {
                 Analytics
               </h5>
             </div>
-            <div  className="col m-0 p-4 nk-bg-9">
+            <div className="col m-0 p-4 nk-bg-9 pointer"onClick={() => {
+              navigate("/callForPapers?show=InternetOfThings");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -302,7 +319,9 @@ export default function Home() {
                 IoT
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-10">
+            <div className="col m-0 p-4 nk-bg-10 pointer"onClick={() => {
+              navigate("/callForPapers?show=CloudComputingAndVisualization");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -314,7 +333,9 @@ export default function Home() {
                 Cloud Computing
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-11">
+            <div className="col m-0 p-4 nk-bg-11 pointer"onClick={() => {
+              navigate("/callForPapers?show=DeepLearning");
+            }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -382,7 +403,7 @@ export default function Home() {
       </div>
 
       {/* keynote speakers */}
-      <div style={{display:"none"}}>
+      <div style={{ display: "none" }}>
         <div className="p-4">
           <h2>Keynote Speakers</h2>
         </div>
