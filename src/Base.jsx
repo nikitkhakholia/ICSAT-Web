@@ -13,9 +13,9 @@ export default function Base({ children }) {
           zIndex:"1"
         }}
       >
-        <nav class="navbar navbar-expand-lg bg-white">
-          <div class="container-fluid">
-            {/* <a class="navbar-brand p-4" href="/">
+        <nav className="navbar navbar-expand-lg bg-white">
+          <div className="container-fluid">
+            {/* <a className="navbar-brand p-4" href="/">
               <img
                 src="https://christuniversity.in/images/logo.jpg"
                 alt="Christ (Deemed to be) University Logo"
@@ -25,7 +25,7 @@ export default function Base({ children }) {
             </a> */}
 
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -44,7 +44,7 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/icsat-23/build/callForPapers/mainpage">
+                  <a className="nav-link" href="/icsat-23/build/callForPapers">
                     Call for Papers
                   </a>
                 </li>
@@ -60,12 +60,12 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="#experts">
+                  <a className="nav-link" href="/icsat-23/build#experts">
                     Experts
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="#dates">
+                  <a className="nav-link" href="/icsat-23/build#dates">
                     Dates
                   </a>
                 </li>

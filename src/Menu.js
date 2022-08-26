@@ -62,7 +62,7 @@ export default function Menu() {
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="keynoteSpeakers">
+                  <a className="nav-link" href="/keynoteSpeakers">
                     Keynote Speakers
                   </a>
                 </li>
@@ -72,7 +72,7 @@ export default function Menu() {
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="aboutUs">
+                  <a className="nav-link" href="/aboutUs">
                     About Us
                   </a>
                 </li>

@@ -56,38 +56,41 @@ export default function Home() {
   return (
     <div>
       <div
-        className="row m-0 p-0 p-5 justify-content-between align-items-center"
+        className="row m-0 p-0 p-5 justify-content-between align-items-center "
         style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
       >
-        <div className="row m-0 p-0">
-          <div className="col-8 m-0 p-0">
-            <div className="row m-0 p-0 ">
-              <div className="col-12 m-0 p-0">
-                <h4>Conducted By</h4>
-                <img
-                  src="https://christuniversity.in/images/logo.jpg"
-                  alt="Christ (Deemed to be) University Logo"
-                  width="208"
-                  className="d-inline-block align-text-top"
-                />
-              </div>
-            </div>
+        <div
+          className="row justify-content-between align-items-center m-0 p-0"
+          // style={{ display: "inline", alignContent: "flex-start" }}
+        >
+          <div className="col">
+            <img
+              src="https://christuniversity.in/images/logo.jpg"
+              alt="Christ (Deemed to be) University Logo"
+              width="208"
+              className="align-text-top img-fluid"
+            />
+          </div>
+          <div className="col text-end ">
+            <img src={oman} alt="..." className="align-text-top oman" />
           </div>
 
-          <div className="col-md m-0 mt-4 p-0  ">
+          {/* <div className="col-6 m-0 p-0">
+            <img
+              src="https://christuniversity.in/images/logo.jpg"
+              alt="Christ (Deemed to be) University Logo"
+              width="208"
+              className="align-text-top img-fluid"
+            />
+          </div>
+
+          <div className="col-6 m-0 mt-4 p-0  ">
             <div className="row m-0  p-0 align-items-center ">
               <div className="col-2">
-                <img src={oman} alt="..." />
-              </div>
-              <div className="col-md-9 m-0 p-2 font-weight-bold h5">
-                <p className="m-0 p-0">
-                  Modern College of Business and Science
-                  <br />
-                  Muscat, Sultanate of Oman
-                </p>
+                <img src={oman} alt="..." className="align-text-top " />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Caslon" }}>
@@ -213,10 +216,12 @@ export default function Home() {
                 Artificial Intelligence
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-3 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=DeepLearning");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-3 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DeepLearning");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -228,10 +233,12 @@ export default function Home() {
                 Deep &nbsp;&nbsp;&nbsp; Learning
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-4 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=NeuralNetworks");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-4 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=NeuralNetworks");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -243,10 +250,12 @@ export default function Home() {
                 Neural Networks
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-5 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=DataScience");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-5 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DataScience");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -258,10 +267,12 @@ export default function Home() {
                 Data Science
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-6 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=DeepLearning");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-6 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DeepLearning");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -275,10 +286,12 @@ export default function Home() {
             </div>
           </div>
           <div className="row m-0 p-0 align-items-end">
-            <div className="col m-0 p-4 nk-bg-7 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=DeepLearning");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-7 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DeepLearning");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -290,10 +303,12 @@ export default function Home() {
                 Business Intelligence
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-8 pointer"
-            onClick={() => {
-              navigate("/callForPapers?show=DeepLearning");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-8 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DeepLearning");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -305,9 +320,12 @@ export default function Home() {
                 Analytics
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-9 pointer"onClick={() => {
-              navigate("/callForPapers?show=InternetOfThings");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-9 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=InternetOfThings");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -319,9 +337,12 @@ export default function Home() {
                 IoT
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-10 pointer"onClick={() => {
-              navigate("/callForPapers?show=CloudComputingAndVisualization");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-10 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=CloudComputingAndVisualization");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -333,9 +354,12 @@ export default function Home() {
                 Cloud Computing
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-11 pointer"onClick={() => {
-              navigate("/callForPapers?show=DeepLearning");
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-11 pointer"
+              onClick={() => {
+                navigate("/callForPapers?show=DeepLearning");
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -364,7 +388,7 @@ export default function Home() {
               </h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">31 Jan 2021</h5>
+              <h5 className="mt-4">To Be Decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -372,7 +396,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Acceptance Notification</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">27 Feb 2021</h5>
+              <h5 className="mt-4">To Be Decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -380,7 +404,7 @@ export default function Home() {
               <h5 className="mt-4">Last date for Camera Ready paper</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">27 Feb 2021</h5>
+              <h5 className="mt-4">To Be Decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -388,7 +412,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Registration</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">28 Feb 2021</h5>
+              <h5 className="mt-4">To Be Decided</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -396,7 +420,7 @@ export default function Home() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">05,06 March 2021</h5>
+              <h5 className="mt-4">To Be Decided</h5>
             </div>
           </div>
         </div>

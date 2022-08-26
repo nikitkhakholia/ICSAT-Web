@@ -22,7 +22,7 @@ root.render(
     <Base>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/callForPapers/:id' element={<CallForPapers/>}/>
+      <Route path='/callForPapers' element={<CallForPapers/>}/>
       <Route path='/dates' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
