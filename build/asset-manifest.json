@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.69a887c1.css",
-    "main.js": "/static/js/main.d584b6da.js",
-    "static/media/CaslonBold.ttf": "/static/media/CaslonBold.55e210e1518e1c66fea3.ttf",
-    "static/media/bg.svg": "/static/media/bg.136549068bc0cd0ca4dda188272fc710.svg",
-    "index.html": "/index.html",
-    "static/media/callpapers.svg": "/static/media/callpapers.72fb7b3a1ecd523ee1066e368668869c.svg",
-    "static/media/2.svg": "/static/media/2.281f78394db4822c83544e63f599869f.svg",
-    "static/media/6.svg": "/static/media/6.fd15604e93a0f670b18a35045e9bd7d6.svg",
-    "static/media/5.svg": "/static/media/5.0aca582063b21b598906f909698386a7.svg",
-    "static/media/7.svg": "/static/media/7.8099df0888e5fe4d949511a314c866c9.svg",
-    "static/media/3.svg": "/static/media/3.ba9d4b91004c4493ed73c02ab6756b72.svg",
-    "static/media/1.svg": "/static/media/1.3109bb7f9dffff7c78a45ce1b7d63355.svg",
-    "static/media/4.svg": "/static/media/4.10bd2639b6aee7e99198b5741da9d0d8.svg",
-    "main.69a887c1.css.map": "/static/css/main.69a887c1.css.map",
-    "main.d584b6da.js.map": "/static/js/main.d584b6da.js.map"
+    "main.css": "/icsat-23/build/static/css/main.fd917c66.css",
+    "main.js": "/icsat-23/build/static/js/main.ba33fa71.js",
+    "static/media/CaslonBold.ttf": "/icsat-23/build/static/media/CaslonBold.55e210e1518e1c66fea3.ttf",
+    "static/media/bg.svg": "/icsat-23/build/static/media/bg.136549068bc0cd0ca4dda188272fc710.svg",
+    "index.html": "/icsat-23/build/index.html",
+    "static/media/callpapers.svg": "/icsat-23/build/static/media/callpapers.72fb7b3a1ecd523ee1066e368668869c.svg",
+    "static/media/2.svg": "/icsat-23/build/static/media/2.281f78394db4822c83544e63f599869f.svg",
+    "static/media/6.svg": "/icsat-23/build/static/media/6.fd15604e93a0f670b18a35045e9bd7d6.svg",
+    "static/media/5.svg": "/icsat-23/build/static/media/5.0aca582063b21b598906f909698386a7.svg",
+    "static/media/7.svg": "/icsat-23/build/static/media/7.8099df0888e5fe4d949511a314c866c9.svg",
+    "static/media/3.svg": "/icsat-23/build/static/media/3.ba9d4b91004c4493ed73c02ab6756b72.svg",
+    "static/media/1.svg": "/icsat-23/build/static/media/1.3109bb7f9dffff7c78a45ce1b7d63355.svg",
+    "static/media/4.svg": "/icsat-23/build/static/media/4.10bd2639b6aee7e99198b5741da9d0d8.svg",
+    "main.fd917c66.css.map": "/icsat-23/build/static/css/main.fd917c66.css.map",
+    "main.ba33fa71.js.map": "/icsat-23/build/static/js/main.ba33fa71.js.map"
   },
   "entrypoints": [
-    "static/css/main.69a887c1.css",
-    "static/js/main.d584b6da.js"
+    "static/css/main.fd917c66.css",
+    "static/js/main.ba33fa71.js"
   ]
 }
