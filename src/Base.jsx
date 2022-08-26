@@ -10,11 +10,12 @@ export default function Base({ children }) {
           position: "fixed",
           top: "0",
           width: "100%",
+          zIndex:"1"
         }}
       >
-        <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container-fluid">
-            {/* <a className="navbar-brand p-4" href="/">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+            {/* <a class="navbar-brand p-4" href="/">
               <img
                 src="https://christuniversity.in/images/logo.jpg"
                 alt="Christ (Deemed to be) University Logo"
@@ -24,7 +25,7 @@ export default function Base({ children }) {
             </a> */}
 
             <button
-              className="navbar-toggler"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -43,33 +44,33 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/icsat-23/build/callForPapers">
+                  <a className="nav-link" href="/icsat-23/build/callForPapers/mainpage">
                     Call for Papers
                   </a>
                 </li>
 
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/registration">
+                  <a className="nav-link" href="/icsat-23/build/">
                     Registration
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/committees">
+                  <a className="nav-link" href="/icsat-23/build/">
                     Committees
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="keynoteSpeakers">
-                    Keynote Speakers
+                  <a className="nav-link" href="#experts">
+                    Experts
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/dates">
+                  <a className="nav-link" href="#dates">
                     Dates
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="aboutUs">
+                  <a className="nav-link" href="/icsat-23/build/">
                     About Us
                   </a>
                 </li>
