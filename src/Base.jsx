@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, } from "react-router-dom";
 
 export default function Base({ children }) {
   let navigate = useNavigate();
@@ -34,7 +34,7 @@ export default function Base({ children }) {
               <ul class="navbar-nav d-flex px-4">
                 <li className="nav-item px-2">
                   <a
-                    className="nav-link active"
+                    className={"nav-link"}
                     href="#"
                     onClick={(e) => {
                       navigate("/");
@@ -56,10 +56,13 @@ export default function Base({ children }) {
                 </li>
 
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="#"
-                  onClick={e=>{
-                    navigate("/Registration")
-                  }}>
+                  <a
+                    className="nav-link"
+                    href="#"
+                    onClick={(e) => {
+                      navigate("/Registration");
+                    }}
+                  >
                     Registration
                   </a>
                 </li>
@@ -87,11 +90,11 @@ export default function Base({ children }) {
                     Dates
                   </a>
                 </li>
-                <li className="nav-item  px-2">
+                {/* <li className="nav-item  px-2">
                   <a className="nav-link" href="/icsat-23/build/">
                     About Us
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
