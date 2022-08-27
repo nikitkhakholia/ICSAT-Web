@@ -32,40 +32,49 @@ export default function KeynoteSpeakers() {
         </div>
       </div>
       <div className="row m-1 p-0 align-items-center" class="d-flex justify-content-center" style={{ fontFamily: "Nunito" }}>
-        <div className="col-lg-3 col-md-6 col-12 m-2 p-0" onClick={(e) => {
-              let path = `/MohammadSKhan`; 
-              navigate(path);
-            }}>
-          <div class="card" style={{ width: "18rem" }}>
+        <div className="col-md-3 m-2 p-0"
+          onClick={(e) => {
+            let path = `/DharmSinghJat`;
+            navigate(path);
+          }}>
+          <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}>
             <img class="card-img-top" src={person1} alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title" >Prof. Dharm Singh Jat</h5>
               <p class="card-text">Professor</p>
               <p class="card-text">Namibia University of Science and Technology (NUST)</p>
+
             </div>
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-12  m-2 p-0">
-          <div class="card" style={{ width: "18rem" }}>
+        <div className="col-md-3  m-2 p-0"
+          onClick={(e) => {
+            let path = `/MohammadSKhan`;
+            navigate(path);
+          }}>
+          <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}>
             <img class="card-img-top" src={person2} alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Dr. Mohammad S. Khan</h5>
               <p class="card-text">Assistant Professor</p>
               <p class="card-text">East Tennessee State University</p>
-              <br />
             </div>
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-6 col-12  m-2 p-0 ">
-          <div class="card" style={{ width: "18rem" }}>
+        <div className="col-md-3  m-2 p-0 "
+          onClick={(e) => {
+            let path = `/MarioJoseDivan`;
+            navigate(path);
+          }}>
+          <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}>
             <img class="card-img-top" src={person3} alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Prof. Dr. Mario Jose Divan</h5>
               <p class="card-text">Sr. Solutions Architect</p>
               <p class="card-text">Intel</p>
-              <br />
+
             </div>
           </div>
         </div>

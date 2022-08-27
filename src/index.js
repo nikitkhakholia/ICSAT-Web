@@ -9,7 +9,8 @@ import Committees from './pages/Committees/Committees';
 import Registration from './pages/Registration/Registration';
 import KeynoteSpeakers from './pages/KeynoteSpeakers/KeynoteSpeakers';
 import MohammadSKhan from './pages/KeynoteSpeakers/MohammadSKhan';
-
+import MarioJoseDivan from './pages/KeynoteSpeakers/MarioJoseDivan';
+import DharmSinghJat from './pages/KeynoteSpeakers/DharmSinghJat';
 // eslint-disable-next-line
 const bootstrapCSS = require("bootstrap/dist/css/bootstrap.css")
 // eslint-disable-next-line
@@ -33,6 +34,8 @@ root.render(
       <Route path='/committees' element={<Committees/>}/>
       <Route path='/KeynoteSpeakers' element={<KeynoteSpeakers/>}/>
       <Route path='/MohammadSKhan' element={<MohammadSKhan/>}/>
+      <Route path='/MarioJoseDivan' element={<MarioJoseDivan/>}/>
+      <Route path='/DharmSinghJat' element={<DharmSinghJat/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
     </Routes></Base>

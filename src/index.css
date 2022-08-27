@@ -167,13 +167,12 @@
   font-family: Caslon;
   src: url(../public/CaslonBold.ttf);
 }
-
-/* .card :hover {
+#key :hover {
 	color: red;
 
 	cursor: pointer;
 }
-
+/*
 .card-title :hover {
 	color: red;	
 	

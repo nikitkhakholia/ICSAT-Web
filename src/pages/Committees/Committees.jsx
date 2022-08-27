@@ -260,7 +260,7 @@ export default function Committees() {
       chair: "",
     },
     {
-      name:"S Askaya",
+      name:"S Akshaya",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
