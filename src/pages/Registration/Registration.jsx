@@ -41,19 +41,19 @@ export default function Registration() {
             <div className='row m-0 mt-5 p-0 align-items-center '>
                 <div className="col-md-12 col-12 m-0 p-0">
                     <div className="row m-0 p-0">
-                        <div className="col-md-6 col m-0 p-4 h-100">
+                        <div className="col-md-6 col-12 m-0 p-4 h-100">
                             <h3>IEEE Paper Submission Templates</h3>
                             <p style={{ fontFamily: "Nunito" }}>
                                 <br /><a href="conference-template.docx" download>Paper Template - DOCUMENT FORMAT (.DOC)</a>
                                 <br /><a href="conference-latex-template.zip" download>Paper Template - LATEX FORMAT (.ZIP)</a>
                             </p>
                         </div>
-                        <div className="col-md-6 col m-0 p-4  h-100 " id="subscribe">
+                        <div className="col-md-6 col-12 m-0 p-4  h-100 " id="subscribe">
                             <h3> Submission link will be open soon. Subscribe to us for more updates</h3>
 
 
-                            <div class="row row-cols-lg-auto g-3  justify-content-center mt-4">
-                                <div class="col-md-2">
+                            <div class="row  g-3  justify-content-center text-center mt-4">
+                                <div class="col-md-6 col-12">
                                     <label for="inputName" class="visually-hidden">
                                         Name
                                     </label>{" "}
@@ -65,7 +65,7 @@ export default function Registration() {
                                         placeholder="Name"
                                     />
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-6 col-12">
                                     <label for="inputEmail" class="visually-hidden">
                                         Email
                                     </label>{" "}
@@ -78,7 +78,7 @@ export default function Registration() {
                                     />
                                 </div>
 
-                                <div class="col-md-2">
+                                <div class="col-12">
                                     <button
                                         type="submit"
                                         class="btn btn-primary"

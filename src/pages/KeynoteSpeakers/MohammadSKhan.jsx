@@ -5,9 +5,9 @@ export default function MohammadSKhan() {
     return (
         <>
             <div class="container-fluid">
-                <div class="row align-items-center p-5">
-                    <div class="col-3"><img src={person1} alt="" class="img-fluid" /></div>
-                    <div class="mt-3 col-6">
+                <div class="row align-items-center justify-content-center p-5">
+                    <div class="col-md-3 col-12"><img src={person1} alt="" class="img-fluid" /></div>
+                    <div class="mt-3 col-md-6 col-12">
                         <h2>Dr. Mohammad S. Khan</h2>
                         <p style={{fontFamily:"Nunito"}}>Assistant Professor</p>
                         <p style={{fontFamily:"Nunito"}}>East Tennessee State University</p>
@@ -15,9 +15,8 @@ export default function MohammadSKhan() {
                 </div>
             </div>
             <div class="container-fluid" style={{fontFamily:"Nunito"}}>
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-7">
+                <div class="row justify-content-center">
+                    <div class="col-8">
                         <p>Dr. Mohammad S. Khan (SM’ 19) is currently an Director of Network Science and Analysis Lab
                             (NSAL), Department of Computing at East Tennessee State University USA. He received his
                             M.Sc. and Ph.D. in Computer Science and Computer Engineering from the University of

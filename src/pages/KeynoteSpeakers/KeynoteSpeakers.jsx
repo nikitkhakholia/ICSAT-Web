@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
 import { scroller } from "react-scroll";
@@ -11,14 +11,12 @@ export default function KeynoteSpeakers() {
   let navigate = useNavigate();
   return (
     <>
-      <div className="row m-3 p-2 mt-5 align-items-center " id="mainpage" >
-        <div className="col-md-7  mt-5  col-12 m-0 p-0" >
+      <div className="row m-3 p-2 mt-5 align-items-center " id="mainpage">
+        <div className="col-md-7  mt-5  col-12 m-0 p-0">
           <div>
             <br />
             <br />
-            <h1>
-              Keynote Spearkers
-            </h1>
+            <h1>Keynote Spearkers</h1>
             <br />
             <br />
           </div>
@@ -28,30 +26,37 @@ export default function KeynoteSpeakers() {
           <img className="m-0 w-100 justify-content-end" src={i1} alt="..." />
         </div>
       </div>
-      <div class="container-fluid" style={{marginBottom:"30px"}} >
-        <div class="row">
-          <div class="col-md-2 col-12"></div>
-          <div class="col-md-3 col-12"
-            onClick={(e) => {
-              let path = `/DharmSinghJat`;
-              navigate(path);
-            }}>
-            <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}>
+      <div class="container-fluid" style={{ marginBottom: "30px" }}>
+        <div class="row m-0 p-0 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 mx-2 my-2 col-12 ">
+            <div
+              class="card h-100"
+              id="key"
+              onClick={(e) => {
+                let path = `/DharmSinghJat`;
+                navigate(path);
+              }}
+            >
               <img class="card-img-top" src={person1} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title" >Prof. Dharm Singh Jat</h5>
+                <h5 class="card-title">Prof. Dharm Singh Jat</h5>
                 <p class="card-text">Professor</p>
-                <p class="card-text">Namibia University of Science and Technology (NUST)</p>
+                <p class="card-text">
+                  Namibia University of Science and Technology (NUST)
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}
+          <div class="col-lg-3 col-md-4 col-sm-6 mx-2 my-2 col-12 ">
+            <div
+              class="card h-100"
+              id="key"
               onClick={(e) => {
                 let path = `/MohammadSKhan`;
                 navigate(path);
-              }}>
+              }}
+            >
               <img class="card-img-top" src={person2} alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Dr. Mohammad S. Khan</h5>
@@ -61,12 +66,15 @@ export default function KeynoteSpeakers() {
             </div>
           </div>
 
-          <div class="col-md-3"
-            onClick={(e) => {
-              let path = `/MarioJoseDivan`;
-              navigate(path);
-            }}>
-            <div class="card" id="key" style={{ width: "18rem", height: "25rem" }}>
+          <div class="col-lg-3 col-md-4 col-sm-6 mx-2 my-2 col-12 ">
+            <div
+              class="card h-100"
+              id="key"
+              onClick={(e) => {
+                let path = `/MarioJoseDivan`;
+                navigate(path);
+              }}
+            >
               <img class="card-img-top" src={person3} alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Prof. Dr. Mario Jose Divan</h5>
@@ -77,7 +85,6 @@ export default function KeynoteSpeakers() {
           </div>
         </div>
       </div>
-
     </>
-  )
+  );
 }

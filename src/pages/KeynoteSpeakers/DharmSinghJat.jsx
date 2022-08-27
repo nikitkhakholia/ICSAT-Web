@@ -5,9 +5,9 @@ export default function DharmSinghJat(){
     <>
     
     <div class="container-fluid">
-                <div class="row align-items-center p-5">
-                    <div class="col-3"><img src={person1} alt="" class="img-fluid" /></div>
-                    <div class="mt-3 col-6">
+                <div class="row align-items-center justify-content-center p-5">
+                    <div class="col-md-3 col-12"><img src={person1} alt="" class="img-fluid" /></div>
+                    <div class="mt-3 col-md-6 col-12">
                         <h2>Prof. Dharm Singh Jat</h2>
                         <p style={{fontFamily:"Nunito"}}>Professor</p>
                         <p style={{fontFamily:"Nunito"}}>Namibia University of Science and Technology (NUST)</p>
@@ -15,9 +15,8 @@ export default function DharmSinghJat(){
                 </div>
             </div>
             <div class="container-fluid" style={{fontFamily:"Nunito"}}>
-                <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-7">
+                <div class="row justify-content-center">
+                    <div class="col-8">
                         <p>Dharm Singh received his degree Master of Engineering and PhD in Computer
                             Science and Engineering from prestigious universities in India. He is a Professor
                             in the Department of Computer Science of Namibia's University of Science and

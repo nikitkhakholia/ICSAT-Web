@@ -6,9 +6,9 @@ export default function MarioJoseDivan() {
     <>
      
       <div class="container-fluid">
-        <div class="row align-items-center p-5">
-          <div class="col-3"><img src={person1} alt="" class="img-fluid" /></div>
-          <div class="mt-3 col-6">
+        <div class="row align-items-center justify-content-center p-5">
+          <div class="col-md-3 col-12"><img src={person1} alt="" class="img-fluid" /></div>
+          <div class="mt-3 col-md-6 col-12">
             <h2>Prof. Dr. Mario Jose Divan</h2>
             <p style={{fontFamily:"Nunito"}}>Sr. Solutions Architect</p>
             <p style={{fontFamily:"Nunito"}}>Intel</p>
@@ -16,9 +16,8 @@ export default function MarioJoseDivan() {
         </div>
       </div>
       <div class="container-fluid" style={{fontFamily:"Nunito"}}>
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-7">
+        <div class="row justify-content-center">
+          <div class="col-8">
             <p>Mario Diván was born in Santa Rosa (Argentina) on March 10 of 1979. He received an
               engineering degree in Information Systems from the National Technological
               University -NTU- (Argentina) in 2003, while he holds a specialty in managerial
