@@ -56,13 +56,10 @@ export default function Base({ children }) {
                 </li>
 
                 <li className="nav-item  px-2">
-                  <a
-                    className="nav-link"
-                    href="#"
-                    onClick={(e) => {
-                      navigate("/callForPapers/mainpage");
-                    }}
-                  >
+                  <a className="nav-link" href="#"
+                  onClick={e=>{
+                    navigate("/Registration")
+                  }}>
                     Registration
                   </a>
                 </li>

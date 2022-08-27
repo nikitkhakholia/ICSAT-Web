@@ -6,7 +6,7 @@ import Home from './pages/Home/Home';
 import Base from './Base';
 import CallForPapers from './pages/CallForPapers/CallForPapers';
 import Committees from './pages/Committees/Committees';
-
+import Registration from './pages/Registration/Registration';
 // eslint-disable-next-line
 const bootstrapCSS = require("bootstrap/dist/css/bootstrap.css")
 // eslint-disable-next-line
@@ -24,6 +24,7 @@ root.render(
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/callForPapers/:id' element={<CallForPapers/>}/>
+      <Route path='/Registration' element={<Registration/>}/>
       <Route path='/dates' element={<Home/>}/>
       <Route path='/committees' element={<Committees/>}/>
       <Route path='/' element={<Home/>}/>
