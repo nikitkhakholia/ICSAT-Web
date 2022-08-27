@@ -72,7 +72,6 @@ export default function KeynoteSpeakers() {
                 <h5 class="card-title">Prof. Dr. Mario Jose Divan</h5>
                 <p class="card-text">Sr. Solutions Architect</p>
                 <p class="card-text">Intel</p>
-
               </div>
             </div>
           </div>

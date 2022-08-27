@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
 import { scroller } from "react-scroll";
 
@@ -45,8 +44,8 @@ export default function Registration() {
                         <div className="col-md-6 col m-0 p-4 h-100">
                             <h3>IEEE Paper Submission Templates</h3>
                             <p style={{ fontFamily: "Nunito" }}>
-                                <br /><a href="/">Paper Template - DOCUMENT FORMAT (.DOC)</a>
-                                <br /><a href="/">Paper Template - LATEX FORMAT (.ZIP)</a>
+                                <br/><a href="conference-template.docx" download>Paper Template - DOCUMENT FORMAT (.DOC)</a>
+                                <br/><a href="conference-latex-template.zip" download>Paper Template - LATEX FORMAT (.ZIP)</a>
                             </p>
                         </div>
                         <div className="col-md-6 col m-0 p-4  h-100 " id="subscribe">
