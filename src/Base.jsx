@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Base({ children }) {
+    let navigate = useNavigate(); 
+
   return (
     <div className="">
       <div
@@ -13,19 +16,10 @@ export default function Base({ children }) {
           zIndex:"1"
         }}
       >
-        <nav className="navbar navbar-expand-lg bg-white">
-          <div className="container-fluid">
-            {/* <a className="navbar-brand p-4" href="/">
-              <img
-                src="https://christuniversity.in/images/logo.jpg"
-                alt="Christ (Deemed to be) University Logo"
-                width="200"
-                className="d-inline-block align-text-top"
-              />
-            </a> */}
-
-            <button
-              className="navbar-toggler"
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
+              <button
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -33,24 +27,34 @@ export default function Base({ children }) {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div className="me-auto mb-2 mb-lg-0"></div>
-              <ul className="navbar-nav d-flex px-4">
+              <ul class="navbar-nav d-flex px-4">
                 <li className="nav-item px-2">
-                  <a className="nav-link active" href="/icsat-23/build">
+                  <a className="nav-link active" href="#"
+                  onClick={e=>{
+                    navigate("/")
+                  }}
+                  >
                     Home
                   </a>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link" href="/icsat-23/build/callForPapers">
+                  <a className="nav-link" href="#"
+                  onClick={e=>{
+                    navigate("/callForPapers/mainpage")
+                  }}>
                     Call for Papers
                   </a>
                 </li>
 
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/icsat-23/build/">
+                  <a className="nav-link" href="#"
+                  onClick={e=>{
+                    navigate("/callForPapers/mainpage")
+                  }}>
                     Registration
                   </a>
                 </li>

@@ -6,10 +6,7 @@
 .christ-blue {
   color: #183276;
 }
-.pointer{
-  cursor: pointer;
 
-}
 .nk-btn {
   letter-spacing: .05rem;
   cursor: pointer;
@@ -167,6 +164,7 @@ h3 {
   font-family: myFirstFont;
  color:black;
 }
+
 
 .oman{
   width: 8rem;
