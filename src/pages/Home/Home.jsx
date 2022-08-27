@@ -79,22 +79,7 @@ export default function Home() {
             <img src={oman} alt="..." className="align-text-top oman" />
           </div>
 
-          {/* <div className="col-6 m-0 p-0">
-            <img
-              src="https://christuniversity.in/images/logo.jpg"
-              alt="Christ (Deemed to be) University Logo"
-              width="208"
-              className="align-text-top img-fluid"
-            />
-          </div>
-
-          <div className="col-6 m-0 mt-4 p-0  ">
-            <div className="row m-0  p-0 align-items-center ">
-              <div className="col-2">
-                <img src={oman} alt="..." className="align-text-top " />
-              </div>
-            </div>
-          </div> */}
+         
         </div>
         <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Playfair Display"}}>

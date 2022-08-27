@@ -233,6 +233,45 @@ export default function Committees() {
       chair: "",
     },
   ];
+
+  let wd = [
+    {
+      name:"Dr.Cecil Donald A",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+    {
+      name:"Joseph K Iype",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+    {
+      name:"Ashwin Kumar",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+    {
+      name:"Nikit Khakholia",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+    {
+      name:"S Askaya",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+    {
+      name:"Meghana M",
+      desg: "Department of Computer Science",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    },
+  ];
   return (
     <div>
       <div className="" id="mainpage">
@@ -326,6 +365,20 @@ export default function Committees() {
                   );
                 })}
               </div>
+              <h2 className="p-2">Website Development  Committee</h2>
+              <div className="row m-0 px-0 justify-content-center">
+                {wd.map((y) => {
+                  return (
+                    <PeopleCard
+                      name={y.name}
+                      desg={y.desg}
+                      college={y.college}
+                      chair={y.chair}
+                    />
+                  );
+                })}
+              </div>
+              
             </div>
           </div>
         </div>

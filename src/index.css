@@ -168,7 +168,16 @@
   src: url(../public/CaslonBold.ttf);
 }
 
+/* .card :hover {
+	color: red;
 
+	cursor: pointer;
+}
+
+.card-title :hover {
+	color: red;	
+	
+} */
 
 h3 {
   font-family: myFirstFont;
