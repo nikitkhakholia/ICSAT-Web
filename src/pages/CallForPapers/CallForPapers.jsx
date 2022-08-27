@@ -32,10 +32,11 @@ export default function CallForPapers() {
           <br />
           <br />
           </div>
-          <p>
-            {/* Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy */}
+          <div className="col-10" style={{fontFamily:"Nunito"}}>
+          <p>          
+          The 2023 IEEE First International Conference on Computational Science and Sustainable Technologies (ICCSST 2023) will be held parallelly at CHRIST (Deemed to be University), Bangalore, India and Modern College of Business and Science, Muscat, Oman. The technical program comprises of many symposia and a variety of tutorials and workshops. IEEE ICCSST 2023 will also include an attractive industry program aimed at practitioners, with keynotes and panels from prominent research, industry and government leaders, business and industry panels, and technological exhibits.
           </p>
+          </div>
         </div>
 
         <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 ">         
@@ -48,18 +49,71 @@ export default function CallForPapers() {
         </div>
         <div className="col-md-3  w-40  p-0 mt-3">
           <div className=" text-center border-0 m-0 p-0">
-            <div className="nk-blue-bg p-3 px-5 text-light nk-btn" 
+            <div className="nk-blue-bg p-3 px-5 nk-btn" 
+              style={{fontFamily:"Nunito"}}
              onClick={(e) => {
               let path = `/`; 
               navigate(path);
             }}>
-              Submit Your Paper       
+              Register Now     
 
             </div>
           </div>
         </div>
       </div>
       </div>
+
+       {/* important dates */}
+       <div id="dates" className="row m-0 p-0 text-light align-items-center nk-bg-7" >
+        <div className="col-md-3 col-12 m-0 p-4 ">
+          <h2>Important Dates</h2>
+        </div>
+        <div className="col-md-9 col-12 m-0 p-4 nk-bg-1" style={{fontFamily:"Nunito"}}>
+          <div className="row m-0 p-4 align-items-center">
+            <div className="col m-0 p-0">
+              <h5 className="mt-4">
+                Last date for submission of Full Length paper
+              </h5>
+            </div>
+            <div className="col m-0 p-0 text-end">
+              <h5 className="mt-4">20 December 2022</h5>
+            </div>
+          </div>
+          <div className="row m-0 p-4 align-items-center">
+            <div className="col m-0 p-0">
+              <h5 className="mt-4">Date for Acceptance Notification</h5>
+            </div>
+            <div className="col m-0 p-0 text-end">
+              <h5 className="mt-4">15 January 2023</h5>
+            </div>
+          </div>
+          <div className="row m-0 p-4 align-items-center">
+            <div className="col m-0 p-0">
+              <h5 className="mt-4">Last date for Camera Ready paper</h5>
+            </div>
+            <div className="col m-0 p-0 text-end">
+              <h5 className="mt-4">15 February 2023</h5>
+            </div>
+          </div>
+          <div className="row m-0 p-4 align-items-center">
+            <div className="col m-0 p-0">
+              <h5 className="mt-4">Date for Registration</h5>
+            </div>
+            <div className="col m-0 p-0 text-end">
+              <h5 className="mt-4">01 March 2023</h5>
+            </div>
+          </div>
+          <div className="row m-0 p-4 align-items-center">
+            <div className="col m-0 p-0">
+              <h5 className="mt-4">Conference Date</h5>
+            </div>
+            <div className="col m-0 p-0 text-end">
+              <h5 className="mt-4"> 15 & 16th March 2023</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div className="row m-0 mt-5 p-0 align-items-center"  class="AI">
           <div className="row m-0 p-0">
             <div  className="col-md-4 m-0 p-5 text-light nk-bg-2 " >           
@@ -67,7 +121,7 @@ export default function CallForPapers() {
               Artificial Intelligence and Robotics
               </p>           
             </div>
-            <div className="col p-5 text-light nk-bg-12 h-105">
+            <div className="col p-5 text-light nk-bg-12 h-105" style={{fontFamily:"Nunito"}}>
               Vision and non-contact sensory systems, Embedded Systems,
               BioInspiration and Robotics: Walking And Climbing Robots, Robotic
               Automation and Outsourcing, Drones and drone applications, New
@@ -81,7 +135,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="BT">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-7">
             <p class="fs-3">Blockchain Technology</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-13 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-13 h-105" style={{fontFamily:"Nunito"}}>
               Blockchain in Artificial Intelligence, Machine Learning, cyber
               security, Identity and Access Management (IAM), Blockchain tools,
               simulators, and test-nets, Blockchain-based IoT, fog, cloud, and
@@ -94,7 +148,7 @@ export default function CallForPapers() {
             <div className="col-md-4 m-0 p-5 text-light nk-bg-9 ">
             <p class="fs-3"> Cloud Computing and Visualization </p>
             </div>
-            <div className="col m-0 p-5 text-light nk-bg-14 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-14 h-105" style={{fontFamily:"Nunito"}}>
               Software As A Service (SaaS), Cloud Security and Privacy, Cloud
               Storage, Cloud Application Development, Industry-Specific Clouds,
               Cloud Performance Management, Business Models in Cloud, 5G Cloud,
@@ -106,7 +160,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="CS">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3 " >Cyber Security</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-15 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-15 h-105" style={{fontFamily:"Nunito"}}>
               Cryptographic Algorithms, Risk and Reputation Management,
               Intrusion Detection and Response, Mobile Security, Cyber security
               Legal and Regulatory Issues, Malware Detection, Information Hiding
@@ -128,7 +182,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="DS" >
             <div className="col-md-4 m-0 p-5 text-light nk-bg-1 ">
             <p class="fs-3">Data Science</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-16 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-16 h-105" style={{fontFamily:"Nunito"}}>
               Agile Software Development and Testing, Software Testing, Big Data
               and Data Science, Algorithms and Computational Mathematics, MDA -
               Model Driven Architecture, MDE - Model Driven Engineering,
@@ -139,7 +193,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="EC">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-3">
             <p class="fs-3">E-Commerce</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-17 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-17 h-105" style={{fontFamily:"Nunito"}}>
               Machine Learning, Big Data, and Social Network Analysis, Sharing
               Economy, Social Commerce, and Social Media, Crowdsourcing and
               Crowdfunding Financial Technology and Markets, e-Learning and
@@ -155,7 +209,7 @@ export default function CallForPapers() {
             <div className="col-md-4 m-0 p-5 text-light nk-bg-6 ">
             <p class="fs-3">High Performing Computer Architectures{" "}</p>
             </div>
-            <div className="col m-0 p-5 text-light nk-bg-18 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-18 h-105" style={{fontFamily:"Nunito"}}>
               System-on-chip and network-on-chip architectures, Multicore
               processor architecture, Application modeling and mapping schemes
               for multicore/SoC systems, Multicore computing and programming
@@ -166,7 +220,7 @@ export default function CallForPapers() {
           </div>
           <div  className="row m-0 p-0" id="IMP">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-11 "><p class="fs-3">Image and Video Processing</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-19 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-19 h-105" style={{fontFamily:"Nunito"}}>
               Action recognition, Aerial images, Anomaly detection, Automatic
               segmentation, Background subtraction, Cognitive information
               processing, Feature extraction and classification, Image and Video
@@ -178,7 +232,7 @@ export default function CallForPapers() {
             <div className="col-md-4 m-0 p-5 text-light nk-bg-25 ">
             <p class="fs-3"> Pandemic Prepardness and Digital Technology</p>
             </div>
-            <div className="col m-0 p-5 text-light nk-bg-20 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-20 h-105" style={{fontFamily:"Nunito"}}>
               Contact tracing: Data dashboards; migration maps; machine
               learning; real-time data from smartphones and wearable technology
               Screening for infection: Artificial intelligence; digital
@@ -194,11 +248,11 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0" id="PRC">
-            <div className="col-md-4 m-0 p-5 text-light nk-bg-26">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-26" style={{fontFamily:"Nunito"}}>
             <p class="fs-3">Pattern Recognization and Classification</p>
             </div>
 
-            <div className="col m-0 p-5 text-light nk-bg-21 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-21 h-105" style={{fontFamily:"Nunito"}}>
               Probabilistic Texture Synthesis, Benchmarking, 3D Data Modelling,
               Spatial Data Modelling, Probabilistic Expert Systems, Statistical
               Pattern Recognition, Probabilistic Neural Networks, Content Based
@@ -209,7 +263,7 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0" id="NLP">
-            <div className="col-md-4 m-0 p-5 text-light nk-bg-8 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-8 " style={{fontFamily:"Nunito"}}>
             <p class="fs-3">Natural Language Processing</p></div>
             <div className="col m-0 p-5 text-light nk-bg-22 h-105">
               Dialogue and Interactive Systems, Computational Social Science and
@@ -225,7 +279,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="SE">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-30">
             <p class="fs-3">Software Engineering</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-23 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-23 h-105" style={{fontFamily:"Nunito"}}>
               Agile software development, Cloud and service-oriented computing,
               Cooperative, distributed, and collaborative software engineering,
               End-user software engineering, Human factors and social aspects of
@@ -239,7 +293,7 @@ export default function CallForPapers() {
           <div className="row m-0 p-0" id="Iot">
             <div className="col-md-4 m-0 p-5 text-light nk-bg-31 ">
             <p class="fs-3">Internet of Things (IOT)</p></div>
-            <div className="col m-0 p-5 text-light nk-bg-24 h-105">
+            <div className="col m-0 p-5 text-light nk-bg-24 h-105" style={{fontFamily:"Nunito"}}>
               Smart Grid Systems, Smart Cities, IoT Architectures, Human-object
               Interations, Interoperability of IoTs, Cyberphysical Systems.
               WIRELESS COMMUNICATIONS : Broadcast Channels and Information
@@ -251,6 +305,40 @@ export default function CallForPapers() {
               other Personal area networks.
             </div>
           </div>
+          <div className="row m-0 p-0" id="Iot">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-31 ">
+            <p class="fs-3">Wireless Communications </p></div>
+            <div className="col m-0 p-5 text-light nk-bg-24 h-105" style={{fontFamily:"Nunito"}}>
+              Broadcast Channels and Information
+              Theory, Cooperative Networking, Emerging Wireless Standards,
+              Heterogeneous networks (HetNets), MIMO, LTE OFDM Modulation,
+              Personal Area Networks, OFDMA, 4G Cellular, 5G Cellular, SDMA,
+              Smart Antennas, Software Defined Radios, The future of WiFi
+              Traffic Analysis for 4G, Wireless Network Control, Zigbee and
+              other Personal area networks.
+            </div>
+          </div> 
+          <div className="col-md-12 m-0 p-3" style={{textAlign:"center"}}>
+                    <h2>Submission link will be open soon. Subscribe to us for more updates</h2>
+                   
+                    <form class="row row-cols-lg-auto g-3 ml-10" method="POST" 
+                        action="https://script.google.com/macros/s/AKfycbzE0KZCrl_HVQvWSakbF5I1i-s46eo2tyAPIsC8yMtZnOf28-spRys5Tlwbjig1wbwD/exec">
+                     
+                        <div class="col-md-2">
+                            <label for="inputName" class="visually-hidden">Name</label> <input name="Name" type="text"
+                                class="form-control" id="inputName" placeholder="Name" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputEmail" class="visually-hidden">Email</label> <input type="text" class="form-control"
+                                id="inputEmail" name="Email" placeholder="Email" />
+                        </div>
+
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                    </div>
+                     
         </div>
 
     </>

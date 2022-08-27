@@ -31,10 +31,9 @@ export default function Registration() {
                         <br />
                         <br />
                     </div>
-                    <p>
-                        {/* Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy */}
-                    </p>
+                    {/* <p>
+                    Registration will open in the coming months. Would you like to be notified when the registration is open? Please submit your email address below and we’ll notify you when the registration is live.
+                    </p> */}
                 </div>
 
                 <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 ">
@@ -64,7 +63,7 @@ export default function Registration() {
                     INSTRUCTIONS FOR THE AUTHORS
                 </h1>
             </div>
-            <div className="col-md-12 m-0 p-3" style={{fontFamily:"Caslon"}}>
+            <div className="col-md-12 m-0 p-3" style={{ fontFamily: "Caslon" }}>
                 <ol>
                     <li>
                         Manuscripts must be submitted online via Editorial Manager (EM) – EASYCHAIR , a fully web-based submission, peer-review, and tracking system.
@@ -97,7 +96,24 @@ export default function Registration() {
                     <br /><a href="/">Paper Template - DOCUMENT FORMAT (.DOC)</a>
                     <br /><a href="/">Paper Template - LATEX FORMAT (.ZIP)</a>
                 </div>
+                <div className="col-md-12 m-0 p-3">
+                    Submission link will be open soon. Subscribe to us for more updates
+                    <form class="row row-cols-lg-auto g-3" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbzE0KZCrl_HVQvWSakbF5I1i-s46eo2tyAPIsC8yMtZnOf28-spRys5Tlwbjig1wbwD/exec">
+                        <div class="col-md-2">
+                            <label for="inputName" class="visually-hidden">Name</label> <input name="Name" type="text"
+                                class="form-control" id="inputName" placeholder="Name" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputEmail" class="visually-hidden">Email</label> <input type="text" class="form-control"
+                                id="inputEmail" name="Email" placeholder="Email" />
+                        </div>
 
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </>
     )
