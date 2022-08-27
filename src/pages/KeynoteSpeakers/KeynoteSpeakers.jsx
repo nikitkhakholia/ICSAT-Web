@@ -31,8 +31,8 @@ export default function KeynoteSpeakers() {
           <img className="m-0 w-100 justify-content-end" src={i1} alt="..." />
         </div>
       </div>
-      <div className="row m-1 p-0 align-items-center" class="d-flex justify-content-center" style={{ fontFamily: "Nunito" }}>
-        <div className="col-md-3 m-2 p-0"
+      <div className="row m-0 px-0 justify-content-center" class="d-flex justify-content-center" style={{ fontFamily: "Nunito" }}>
+        <div className="col-lg-3 col-md-6 col-12 m-0 p-2"
           onClick={(e) => {
             let path = `/DharmSinghJat`;
             navigate(path);
@@ -48,7 +48,7 @@ export default function KeynoteSpeakers() {
           </div>
         </div>
 
-        <div className="col-md-3  m-2 p-0"
+        <div className="col-lg-3 col-md-6 col-12 m-0 p-2"
           onClick={(e) => {
             let path = `/MohammadSKhan`;
             navigate(path);
@@ -63,7 +63,7 @@ export default function KeynoteSpeakers() {
           </div>
         </div>
 
-        <div className="col-md-3  m-2 p-0 "
+        <div className="col-lg-3 col-md-6 col-12 m-0 p-2"
           onClick={(e) => {
             let path = `/MarioJoseDivan`;
             navigate(path);
