@@ -86,7 +86,10 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/icsat-23/build/#dates">
+                  <a className="nav-link" href="#dates"
+                   onClick={e=>{
+                    navigate("/dates")
+                  }}>
                     Dates
                   </a>
                 </li>

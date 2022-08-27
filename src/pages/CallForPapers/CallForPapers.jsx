@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
 import { scroller } from "react-scroll";
-
 import { useLocation } from "react-router-dom";
 
 export default function CallForPapers() {
@@ -51,16 +50,14 @@ export default function CallForPapers() {
           <div className="col-7  p-0 "></div>
           <div className="col-md-3  w-40  p-0 mt-3">
             <div className=" text-center border-0 m-0 p-0">
+            <a href="#register" style={{textDecoration:"none",color:"white"}}>
               <div
                 className="nk-blue-bg p-3 px-5 nk-btn"
                 style={{ fontFamily: "Nunito" }}
-                onClick={(e) => {
-                  let path = `/`;
-                  navigate(path);
-                }}
+                
               >
-                Register Now
-              </div>
+               Register Now
+              </div></a>
             </div>
           </div>
         </div>
@@ -406,7 +403,7 @@ export default function CallForPapers() {
               />
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2" id="register">
               <button
                 type="submit"
                 class="btn btn-primary"

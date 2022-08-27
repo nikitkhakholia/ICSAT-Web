@@ -1,5 +1,7 @@
 import React,{useEffect,useState,useRef} from "react";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 
 // import i1 from "../../assets/1.svg";
@@ -20,6 +22,13 @@ export default function Home() {
   const [timerSeconds,setTimerSeconds] = useState('00');
 
   let interval = useRef();
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+
+
+  const scrollToSection = () => {
+    scroller.scrollTo(id);
+  };
 
   const startTimer = ()=>
   {
@@ -48,6 +57,7 @@ export default function Home() {
   };
 
   useEffect (()=> {
+    scrollToSection();
     startTimer();
     return () => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -59,6 +69,7 @@ export default function Home() {
  
   return (
     <div>
+      {id}
       <div
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
         style={{ minHeight: "60vh", backgroundImage: `url(${bg})`}}
