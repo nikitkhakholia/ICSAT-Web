@@ -94,7 +94,7 @@ export default function Home() {
         </div>
         <div className="col-12 mt-5">
           <h1 className="font-weight-bold" style={{ fontFamily: "Playfair Display"}}>
-            2023 IEEE FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES AND SUSTAINABLE  
+            FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES AND SUSTAINABLE  
             TECHNOLOGIES (ICCSST - 2023) 
           </h1>
         </div>
