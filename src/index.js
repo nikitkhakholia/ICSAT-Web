@@ -7,7 +7,6 @@ import Base from './Base';
 import CallForPapers from './pages/CallForPapers/CallForPapers';
 import Committees from './pages/Committees/Committees';
 import Registration from './pages/Registration/Registration';
-import Committees from './pages/Committees/Committees';
 // eslint-disable-next-line
 const bootstrapCSS = require("bootstrap/dist/css/bootstrap.css")
 // eslint-disable-next-line
