@@ -176,4 +176,11 @@ h3 {
   .oman{
     width: 3rem;
   }
+  .no-mob{
+    display: none;
+  }
+}
+
+.nk-shadow{
+  box-shadow: .2rem .2rem gray;
 }

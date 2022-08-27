@@ -5,6 +5,7 @@ import './index.css';
 import Home from './pages/Home/Home';
 import Base from './Base';
 import CallForPapers from './pages/CallForPapers/CallForPapers';
+import Committees from './pages/Committees/Committees';
 import Registration from './pages/Registration/Registration';
 import Committees from './pages/Committees/Committees';
 // eslint-disable-next-line
@@ -27,7 +28,7 @@ root.render(
       <Route path='/Registration' element={<Registration/>}/>
       <Route path='/Committees' element={<Committees/>}/>
       <Route path='/dates' element={<Home/>}/>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/committees' element={<Committees/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path='/' element={<Home/>}/>
     </Routes></Base>
