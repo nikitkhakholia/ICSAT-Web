@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/icsat-23/build/static/css/main.f64e5b71.css",
-    "main.js": "/icsat-23/build/static/js/main.8047f5f2.js",
+    "main.js": "/icsat-23/build/static/js/main.2207317b.js",
     "static/media/oman.png": "/icsat-23/build/static/media/oman.12d4a5d72d33184abd05.png",
     "static/media/CaslonBold.ttf": "/icsat-23/build/static/media/CaslonBold.55e210e1518e1c66fea3.ttf",
     "static/media/person1.png": "/icsat-23/build/static/media/person1.f40da0ab574f62a10cf0.png",
@@ -14,10 +14,10 @@
     "index.html": "/icsat-23/build/index.html",
     "static/media/callpapers.svg": "/icsat-23/build/static/media/callpapers.f4125c8b61e85eaf087cd298e87abace.svg",
     "main.f64e5b71.css.map": "/icsat-23/build/static/css/main.f64e5b71.css.map",
-    "main.8047f5f2.js.map": "/icsat-23/build/static/js/main.8047f5f2.js.map"
+    "main.2207317b.js.map": "/icsat-23/build/static/js/main.2207317b.js.map"
   },
   "entrypoints": [
     "static/css/main.f64e5b71.css",
-    "static/js/main.8047f5f2.js"
+    "static/js/main.2207317b.js"
   ]
 }

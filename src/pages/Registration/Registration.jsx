@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 
 
 export default function Registration() {
-   
+
     const location = useLocation();
     const id = location.pathname.split("/")[2];
     useEffect(() => {
@@ -44,8 +44,8 @@ export default function Registration() {
                         <div className="col-md-6 col m-0 p-4 h-100">
                             <h3>IEEE Paper Submission Templates</h3>
                             <p style={{ fontFamily: "Nunito" }}>
-                                <br/><a href="conference-template.docx" download>Paper Template - DOCUMENT FORMAT (.DOC)</a>
-                                <br/><a href="conference-latex-template.zip" download>Paper Template - LATEX FORMAT (.ZIP)</a>
+                                <br /><a href="conference-template.docx" download>Paper Template - DOCUMENT FORMAT (.DOC)</a>
+                                <br /><a href="conference-latex-template.zip" download>Paper Template - LATEX FORMAT (.ZIP)</a>
                             </p>
                         </div>
                         <div className="col-md-6 col m-0 p-4  h-100 " id="subscribe">
