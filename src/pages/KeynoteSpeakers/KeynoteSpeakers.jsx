@@ -28,10 +28,10 @@ export default function KeynoteSpeakers() {
           <img className="m-0 w-100 justify-content-end" src={i1} alt="..." />
         </div>
       </div>
-      <div class="container-fluid" >
+      <div class="container-fluid" style={{marginBottom:"30px"}} >
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-3"
+          <div class="col-md-2 col-12"></div>
+          <div class="col-md-3 col-12"
             onClick={(e) => {
               let path = `/DharmSinghJat`;
               navigate(path);
