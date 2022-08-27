@@ -11,7 +11,7 @@ import i6 from "../../assets/6.svg";
 import i7 from "../../assets/7.svg";
 import bg from "../../assets/bg.svg";
 import si from "../../assets/callpapers.svg";
-import oman from "../../assets/OMAN.png";
+// import oman from "../../assets/OMAN.png";
 
 export default function Home() {
   const [timerDays,setTimerDays] = useState('00');
@@ -76,7 +76,7 @@ export default function Home() {
             />
           </div>
           <div className="col text-end ">
-            <img src={oman} alt="..." className="align-text-top oman" />
+            <img src="https://keystoneacademic-res.cloudinary.com/image/upload/element/97/97366_thumb.png" alt="..." className="align-text-top oman" />
           </div>
 
           {/* <div className="col-6 m-0 p-0">
@@ -201,7 +201,7 @@ export default function Home() {
         </div>
         <div className="col-md-9 col-12 m-0 p-0">
           <div className="row m-0 p-0 align-items-end">          
-            <div className="col m-0 p-4 nk-bg-2 " style={{cursor:"pointer"}}
+            <div className="col m-0 p-4 nk-bg-2 " style={{cursor:"pointer", height:"200px"}}
              onClick={(e) => {
               let path = `/callForPapers/AI`; 
               navigate(path);
@@ -218,7 +218,7 @@ export default function Home() {
                 
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-3 " style={{cursor:"pointer"}}
+            <div className="col m-0 p-4 nk-bg-3 " style={{cursor:"pointer", height:"200px"}}
              onClick={(e) => {
               let path = `/callForPapers/BT`; 
               navigate(path);
@@ -234,7 +234,7 @@ export default function Home() {
                 Blockchain Technology
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-4 " style={{cursor:"pointer"}}
+            <div className="col m-0 p-4 nk-bg-4 " style={{cursor:"pointer", height:"200px"}}
             onClick={(e) => {
               let path = `/callForPapers/CC`; 
               navigate(path);
@@ -250,7 +250,7 @@ export default function Home() {
                 Cloud Computing 
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-5" style={{cursor:"pointer"}}
+            <div className="col m-0 p-4 nk-bg-5" style={{cursor:"pointer", height:"200px"}}
              onClick={(e) => {
               let path = `/callForPapers/CS`; 
               navigate(path);
@@ -267,7 +267,7 @@ export default function Home() {
                 Security
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-6" style={{cursor:"pointer"}}
+            <div className="col m-0 p-4 nk-bg-6" style={{cursor:"pointer", height:"200px"}}
              onClick={(e) => {
               let path = `/callForPapers/DS`; 
               navigate(path);

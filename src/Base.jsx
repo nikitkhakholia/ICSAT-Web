@@ -53,7 +53,7 @@ export default function Base({ children }) {
                 <li className="nav-item  px-2">
                   <a className="nav-link" href="#"
                   onClick={e=>{
-                    navigate("/callForPapers/mainpage")
+                    navigate("/Registration")
                   }}>
                     Registration
                   </a>
