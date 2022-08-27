@@ -75,7 +75,10 @@ export default function Base({ children }) {
                   </a>
                 </li>
                 <li className="nav-item  px-2">
-                  <a className="nav-link" href="/icsat-23/build#experts">
+                  <a className="nav-link" href="#"
+                   onClick={e=>{
+                    navigate("/KeynoteSpeakers")
+                  }}>
                     Keynote Speakers
                   </a>
                 </li>

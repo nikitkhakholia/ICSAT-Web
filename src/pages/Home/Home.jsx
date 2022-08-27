@@ -441,7 +441,7 @@ export default function Home() {
           // style={{ height: "14rem" }}
         >
           <div className="col-md-3 col-12 m-0 p-0 text-center">
-            <h3>EXPERTS</h3>
+            <h3>KEYNOTE SPEAKERS</h3>
           </div>
           <div className="col-md-9 col-12 m-0 p-0"style={{fontFamily:"Nunito"}}>
             <div className="row m-0 p-0">

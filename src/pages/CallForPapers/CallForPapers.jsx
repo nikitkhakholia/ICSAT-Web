@@ -306,9 +306,9 @@ export default function CallForPapers() {
             </div>
           </div>
           <div className="row m-0 p-0" id="Iot">
-            <div className="col-md-4 m-0 p-5 text-light nk-bg-31 ">
+            <div className="col-md-4 m-0 p-5 text-light nk-bg-32 ">
             <p class="fs-3">Wireless Communications </p></div>
-            <div className="col m-0 p-5 text-light nk-bg-24 h-105" style={{fontFamily:"Nunito"}}>
+            <div className="col m-0 p-5 text-light nk-bg-33 h-105" style={{fontFamily:"Nunito"}}>
               Broadcast Channels and Information
               Theory, Cooperative Networking, Emerging Wireless Standards,
               Heterogeneous networks (HetNets), MIMO, LTE OFDM Modulation,
@@ -319,11 +319,11 @@ export default function CallForPapers() {
             </div>
           </div> 
           <div className="col-md-12 m-0 p-3" style={{textAlign:"center"}}>
-                    <h2>Submission link will be open soon. Subscribe to us for more updates</h2>
-                   
-                    <form class="row row-cols-lg-auto g-3 ml-10" method="POST" 
+                    <h3>Submission link will be open soon. Subscribe to us for more updates</h3>
+                  <div class="d-flex justify-content-center" style={{marginTop:"0.5rem",fontFamily:"Nunito"}}>
+                    <form class="row row-cols-lg-auto g-3 ml-10 " method="POST" 
                         action="https://script.google.com/macros/s/AKfycbzE0KZCrl_HVQvWSakbF5I1i-s46eo2tyAPIsC8yMtZnOf28-spRys5Tlwbjig1wbwD/exec">
-                     
+                    
                         <div class="col-md-2">
                             <label for="inputName" class="visually-hidden">Name</label> <input name="Name" type="text"
                                 class="form-control" id="inputName" placeholder="Name" />
@@ -336,7 +336,9 @@ export default function CallForPapers() {
                         <div class="col-md-2">
                             <button type="submit" class="btn btn-primary">Send</button>
                         </div>
+                        
                     </form>
+                    </div>
                     </div>
                      
         </div>
