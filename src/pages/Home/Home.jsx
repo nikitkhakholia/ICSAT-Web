@@ -154,30 +154,6 @@ export default function Home() {
       <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 " style={{display:"none"}}>         
               <img className="m-0 w-100 justify-content-end" src={si} alt="..." />        
         </div>
-
-      {/* <div className="row m-0 p-0" >
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i1} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i2} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i3} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i4} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i5} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i6} alt="..." />
-        </div>
-        <div className="col m-0 p-0">
-          <img className="m-0" src={i7} alt="..." />
-        </div>
-      </div> */}
      
       <div style={{paddingLeft:"40px",paddingRight:"40px",fontFamily: "Nunito"}}>
         <h3 style={{paddingBottom:"20px",paddingTop:"20px",fontFamily: "Playfair Display"}}>About the Conference</h3>
