@@ -114,7 +114,8 @@ export default function Base({ children }) {
         {children}
       </div>
       <footer className="bg-christ">
-        <div className="p-4 text-center">CHRIST (Deemed To Be University)</div>
+        <div className="p-4 text-center">FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES AND SUSTAINABLE  
+            TECHNOLOGIES (ICCSST - 2023) </div>
       </footer>
     </div>
   );
