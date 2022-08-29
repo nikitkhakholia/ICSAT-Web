@@ -49,7 +49,7 @@ export default function Registration() {
                             </p>
                         </div>
                         <div className="col-md-6 col-12 m-0 p-4  h-100 " id="subscribe">
-                            <h3> Submission link will be open soon. Subscribe to us for more updates</h3>
+                            <h3> Submit your details for further updates regarding the Conference</h3>
 
 
                             <div class="row  g-3  justify-content-center text-center mt-4">

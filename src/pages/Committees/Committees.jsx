@@ -13,7 +13,7 @@ export default function Committees() {
 
   let og_c = [
     {
-      name: "Dr. (Fr.) Abraham V M",
+      name: "Dr (Fr.) Abraham V M",
       desg: "Vice Chancellor",
       college: "CHRIST (Deemed to be University)",
       chair: "General Chair",
@@ -25,19 +25,19 @@ export default function Committees() {
       chair: "General Chair",
     },
     {
-      name: "Dr. (Fr.) Joseph CC",
+      name: "Dr (Fr.) Joseph CC",
       desg: "Pro-Vice Chancellor",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr. Moosa Al Kindi",
+      name: "Dr Moosa Al Kindi",
       desg: "Dean",
       college: "Modern College of Business and Science",
       chair: "",
     },
     {
-      name: "Dr. Anil Joseph Pinto",
+      name: "Dr Anil Joseph Pinto",
       desg: "Registrar",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -49,7 +49,7 @@ export default function Committees() {
       chair: "",
     },
     {
-      name: "Dr. George Thomas C",
+      name: "Dr George Thomas C",
       desg: "Dean - Sciences",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -61,8 +61,8 @@ export default function Committees() {
       chair: "Technical Chair",
     },
     {
-      name: "Dr. Ashok Immanuel",
-      desg: "Head - Departments of Computer Science (Technical Chair)",
+      name: "Dr Ashok Immanuel",
+      desg: "Head - Department of Computer Science (Technical Chair)",
       college: "CHRIST (Deemed to be University)",
       chair: "Technical Chair",
     },
@@ -78,7 +78,7 @@ export default function Committees() {
 
   let os = [
     {
-      name: "Dr. Kirubanand V B",
+      name: "Dr Kirubanand V B",
       desg: " Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -91,26 +91,26 @@ export default function Committees() {
     },
   ];
   let cc = [
-    { name: "Dr. Chandra. J", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
+    { name: "Dr Chandra. J", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
     { name: "Dr Vijaya Padmanabha", desg: "", college: "Modern College of Business and Science", chair: "" },
 
   ]
 
   let conv = [
     {
-      name: "Dr. Basant Kumar",
+      name: "Dr Basant Kumar",
       desg: " ",
       college: "Modern College of Business and Science",
       chair: "",
     },
     {
-      name: "Dr. Arokia Paul Rajan R",
+      name: "Dr Arokia Paul Rajan R",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr.Sagaya aurelia",
+      name: "Dr Sagaya aurelia",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -119,7 +119,7 @@ export default function Committees() {
 
   let comm = [
     {
-      name: "Dr. Vinay M",
+      name: "Dr Vinay M",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "Chair",
@@ -131,26 +131,26 @@ export default function Committees() {
       chair: "Chair",
     },
     {
-      name: "Dr. Gobi R",
+      name: "Dr Gobi R",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
 
     {
-      name: "Dr. Rohini V",
+      name: "Dr Rohini V",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr. VAISHNAVI BALAJI",
+      name: "Dr Vaishnavi Balaji",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr.Ruchi",
+      name: "Dr Ruchi",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -171,56 +171,56 @@ export default function Committees() {
 
   let tpc = [
     {
-      name: "Dr. Sandeep J",
+      name: "Dr Sandeep J",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "Chair",
     },
     {
-      name: "Dr. Rubina Nabin, ",
+      name: "Dr Rubina Nabin, ",
       desg: "Department of Computer Science",
       college: "Modern College of Business and Science",
       chair: "Chair",
     },
     {
-      name: "Dr. Prabu P",
+      name: "Dr Prabu P",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr. Peter Augustin D",
+      name: "Dr Peter Augustin D",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
     {
-      name: "Dr. Vaishnavi Balaji",
+      name: "Dr Vaishnavi Balaji",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
-    { name: "Dr.Shoney Sebastian", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
-    { name: "Dr.Beaulah Soundarabai", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
-    { name: "Dr.Manjunath Hiremath", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
+    { name: "Dr Shoney Sebastian", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
+    { name: "Dr Beaulah Soundarabai", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
+    { name: "Dr Manjunath Hiremath", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
  
   ];
 
   let fc = [
     {
-      name: "Dr. Senthilnathan T",
+      name: "Dr Senthilnathan T",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "Chair",
     },
     {
-      name: "Dr. Nassor Sulaiman",
+      name: "Dr Nassor Sulaiman",
       desg: " ",
       college: "Modern College of Business and Science",
       chair: "Chair",
     },
     {
-      name: "Dr POORNIMA N V",
+      name: "Dr Poornima N V",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",
@@ -236,7 +236,7 @@ export default function Committees() {
 
   let wd = [
     {
-      name:"Dr.Cecil Donald A",
+      name:"Dr Cecil Donald A",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
       chair: "",

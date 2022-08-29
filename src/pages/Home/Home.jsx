@@ -426,7 +426,7 @@ export default function Home() {
                   <br />
                   Namibia University of Science and Technology, Namibia
                   <br />
-                  Email: dsingh@nust.na
+                  {/* Email: dsingh@nust.na */}
                 </p>
               </div>
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-4 h-105">
@@ -436,7 +436,7 @@ export default function Home() {
                 Department of Computing <br />
                 East Tennessee State University <br />
                 Johnson City, TN  37614-1266, USA <br/>
-                Email: adhoc.khan@gmail.com
+                {/* Email: adhoc.khan@gmail.com */}
 
                 </p>
               </div>
@@ -446,7 +446,7 @@ export default function Home() {
                 Sr. Solutions Architect and Service Lead <br />
                 IOTG HEC Services - Intel Corporation <br />
                 Hillsboro, Oregon, USA. <br />
-                Email: mario.jose.divan.koller@intel.com 
+                {/* Email: mario.jose.divan.koller@intel.com  */}
                 </p>
               </div>
             </div>

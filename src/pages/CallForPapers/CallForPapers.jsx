@@ -374,7 +374,8 @@ export default function CallForPapers() {
         </div>
         <div className="col-md-12 m-0  mt-4 p-3" style={{ textAlign: "center" }} id="subscribe">
           <h2>
-            Submission link will be open soon. Subscribe to us for more updates
+            {/* Submission link will be open soon. Subscribe to us for more updates */}
+            Submit your details for further updates regarding the Conference
           </h2>
 
           <div class="row row-cols-lg-auto g-3  justify-content-center mt-4">
