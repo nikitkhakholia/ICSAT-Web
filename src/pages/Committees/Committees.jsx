@@ -74,7 +74,38 @@ export default function Committees() {
       chair: "",
     },
     { name: "Dr Basant Kumar", desg: "", college: "Modern College of Business and Science", chair: "" },
-     ];
+    {
+      name: "Dr Chandra J ",
+      desg: "",
+      college: "CHRIST (Deemed to be University)",
+      chair: "Conference Chair",
+    }, 
+    {
+      name: "Dr Basant Kumar ",
+      desg: "",
+      college: "Modern College of Business and Science",
+      chair: "",
+    }, 
+    {
+      name: "Dr Shoney Sebastian",
+      desg: "",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    }, 
+    {
+      name: "Dr Beaulah Soundarabai",
+      desg: "",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    }, 
+    {
+      name: "Dr Manjunath Hiremath",
+      desg: "",
+      college: "CHRIST (Deemed to be University)",
+      chair: "",
+    }, 
+    
+  ];
 
   let os = [
     {
@@ -90,11 +121,7 @@ export default function Committees() {
       chair: "",
     },
   ];
-  let cc = [
-    { name: "Dr Chandra. J", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
-    { name: "Dr Vijaya Padmanabha", desg: "", college: "Modern College of Business and Science", chair: "" },
-
-  ]
+  
 
   let conv = [
     {
@@ -128,7 +155,7 @@ export default function Committees() {
       name: "Dr Chia Zargeh",
       desg: " ",
       college: "Modern College of Business and Science",
-      chair: "Chair",
+      chair: "",
     },
     {
       name: "Dr Gobi R",
@@ -178,9 +205,9 @@ export default function Committees() {
     },
     {
       name: "Dr Rubina Nabin, ",
-      desg: "Department of Computer Science",
+      desg: "",
       college: "Modern College of Business and Science",
-      chair: "Chair",
+      chair: "",
     },
     {
       name: "Dr Prabu P",
@@ -200,10 +227,7 @@ export default function Committees() {
       college: "CHRIST (Deemed to be University)",
       chair: "",
     },
-    { name: "Dr Shoney Sebastian", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
-    { name: "Dr Beaulah Soundarabai", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
-    { name: "Dr Manjunath Hiremath", desg: "", college: "CHRIST (Deemed to be University)", chair: "" },
- 
+   
   ];
 
   let fc = [
@@ -217,7 +241,7 @@ export default function Committees() {
       name: "Dr Nassor Sulaiman",
       desg: " ",
       college: "Modern College of Business and Science",
-      chair: "Chair",
+      chair: "",
     },
     {
       name: "Dr Poornima N V",
@@ -298,20 +322,6 @@ export default function Committees() {
                 })}
               </div>
 
-              <h2 className="p-2">Conveners</h2>
-              <div className="row m-0 px-0 justify-content-center">
-                {og_c.map((y) => {
-                  return (
-                    <PeopleCard
-                      name={y.name}
-                      desg={y.desg}
-                      college={y.college}
-                      chair={y.chair}
-                    />
-                  );
-                })}
-              </div>
-
               <h2 className="p-2">Organizing Secretary</h2>
               <div className="row m-0 px-0 justify-content-center">
                 {os.map((y) => {
@@ -325,6 +335,22 @@ export default function Committees() {
                   );
                 })}
               </div>
+
+              <h2 className="p-2">Conveners</h2>
+              <div className="row m-0 px-0 justify-content-center">
+                {conv.map((y) => {
+                  return (
+                    <PeopleCard
+                      name={y.name}
+                      desg={y.desg}
+                      college={y.college}
+                      chair={y.chair}
+                    />
+                  );
+                })}
+              </div>
+
+              
 
               <h2 className="p-2">Communication / Publicity Committee</h2>
               <div className="row m-0 px-0 justify-content-center">
