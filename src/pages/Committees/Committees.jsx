@@ -73,7 +73,7 @@ export default function Committees() {
       college: "Modern College of Business and Science",
       chair: "",
     },
-    { name: "Dr Basant Kumar", desg: "", college: "Modern College of Business and Science", chair: "" },
+    
     {
       name: "Dr Chandra J ",
       desg: "",
@@ -263,7 +263,7 @@ export default function Committees() {
       name:"Dr Cecil Donald A",
       desg: "Department of Computer Science",
       college: "CHRIST (Deemed to be University)",
-      chair: "",
+      chair: "Chair",
     },
     {
       name:"Joseph K Iype",
