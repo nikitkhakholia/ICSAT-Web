@@ -9,7 +9,7 @@ import { scroller } from "react-scroll";
 // import i4 from "../../assets/4.svg";
 // import i5 from "../../assets/5.svg";
 // import i6 from "../../assets/6.svg";
-import oman from "../../assets/oman.png";
+import oman from "../../assets/MCBS_Logo.png";
 import bg from "../../assets/bg.svg";
 import si from "../../assets/callpapers.svg";
 // import oman from "../../assets/OMAN.png";
@@ -71,9 +71,19 @@ export default function Home() {
       >
         <div
           className="row justify-content-between align-items-center m-0 p-0"
-          // style={{ display: "inline", alignContent: "flex-start" }}
+        // style={{ display: "inline", alignContent: "flex-start" }}
         >
           <div className="col">
+          <img
+              src={oman}
+              alt="Christ (Deemed to be) University Logo"
+              width="208"
+              className="align-text-top img-fluid"
+            />
+            {/* <img src={oman} alt="..."  width="208" className="align-text-top oman" /> */}
+
+          </div>
+          <div className="col text-end ">
             <img
               src="https://christuniversity.in/images/logo.jpg"
               alt="Christ (Deemed to be) University Logo"
@@ -81,19 +91,20 @@ export default function Home() {
               className="align-text-top img-fluid"
             />
           </div>
-          <div className="col text-end ">
-            <img src={oman} alt="..." className="align-text-top oman" />
-          </div>
         </div>
         <div className="col-12 mt-5">
           <h1
             className="font-weight-bold"
-            style={{ fontFamily: "Nunito" }}
+            style={{ fontFamily: "Arial",fontSize:"1.3rem" }}
           >
             ICCSST - 2023 <br />
-            2023 IEEE FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES
-            AND SUSTAINABLE TECHNOLOGIES
+            <div style={{ marginTop:"1rem" }}>
+          <span style={{ fontWeight:"600",fontSize:"1.7rem",marginTop:"1rem" }}>2023 IEEE FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES
+            AND SUSTAINABLE TECHNOLOGIES</span></div>
           </h1>
+          <div style={{ marginTop:"1rem" }}>
+          <h3  style={{ fontFamily: "Arial",fontSize:"1.2rem" }}>SULTANATE OF OMAN | REPUBLIC OF INDIA</h3>
+          </div>
         </div>
         <div className="col-md-6 col-12 m-0 p-0 py-1">
           <div className="row m-0 p-0 text-light font-weight-bold">
@@ -493,7 +504,7 @@ export default function Home() {
         <div
           id="experts"
           className="row m-0 p-0 align-items-center "
-          // style={{ height: "14rem" }}
+        // style={{ height: "14rem" }}
         >
           <div className="col-md-3 col-12 m-0 p-0 text-center">
             <h3>KEYNOTE SPEAKERS</h3>
