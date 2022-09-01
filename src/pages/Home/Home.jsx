@@ -1,8 +1,7 @@
-import React,{useEffect,useState,useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
-
 
 // import i1 from "../../assets/1.svg";
 // import i2 from "../../assets/2.svg";
@@ -16,47 +15,43 @@ import si from "../../assets/callpapers.svg";
 // import oman from "../../assets/OMAN.png";
 
 export default function Home() {
-  const [timerDays,setTimerDays] = useState('00');
-  const [timerHours,setTimerHours] = useState('00');
-  const [timerMinutes,setTimerMinutes] = useState('00');
-  const [timerSeconds,setTimerSeconds] = useState('00');
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
 
   let interval = useRef();
   const location = useLocation();
   const id = location.pathname.split("/")[2];
 
-
   const scrollToSection = () => {
     scroller.scrollTo(id);
   };
 
-  const startTimer = ()=>
-  {
-       const countdownDate = new Date('March 15,2023 00:00:00').getTime();
-        interval = setInterval(()=> {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        if(distance < 0)
-        {
-          clearInterval(interval.current);
+  const startTimer = () => {
+    const countdownDate = new Date("March 15,2023 00:00:00").getTime();
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        }else
-        {
-          setTimerDays(days);
-          setTimerHours(hours);
-          setTimerMinutes(minutes);
-          setTimerSeconds(seconds);
-        }
-
-       },1000);
+      if (distance < 0) {
+        clearInterval(interval.current);
+      } else {
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    }, 1000);
   };
 
-  useEffect (()=> {
+  useEffect(() => {
     scrollToSection();
     startTimer();
     return () => {
@@ -65,16 +60,16 @@ export default function Home() {
     };
   });
 
-  let navigate = useNavigate(); 
- 
+  let navigate = useNavigate();
+
   return (
     <div>
       {id}
       <div
         className="row m-0 p-0 p-5 justify-content-between align-items-center"
-        style={{ minHeight: "60vh", backgroundImage: `url(${bg})`}}
+        style={{ minHeight: "60vh", backgroundImage: `url(${bg})` }}
       >
-       <div
+        <div
           className="row justify-content-between align-items-center m-0 p-0"
           // style={{ display: "inline", alignContent: "flex-start" }}
         >
@@ -89,13 +84,15 @@ export default function Home() {
           <div className="col text-end ">
             <img src={oman} alt="..." className="align-text-top oman" />
           </div>
-
-         
         </div>
         <div className="col-12 mt-5">
-          <h1 className="font-weight-bold" style={{ fontFamily: "Playfair Display"}}>
-            FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES AND SUSTAINABLE  
-            TECHNOLOGIES (ICCSST - 2023) 
+          <h1
+            className="font-weight-bold"
+            style={{ fontFamily: "Nunito" }}
+          >
+            ICCSST - 2023 <br />
+            2023 IEEE FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES
+            AND SUSTAINABLE TECHNOLOGIES
           </h1>
         </div>
         <div className="col-md-6 col-12 m-0 p-0 py-1">
@@ -147,9 +144,8 @@ export default function Home() {
               <div className=" text-center border-0 m-0 my-2 p-0">
                 <div
                   className="nk-blue-bg p-3 px-5 text-light nk-btn "
-                  
                   onClick={(e) => {
-                    let path = `/callForPapers/mainpage`; 
+                    let path = `/callForPapers/mainpage`;
                     navigate(path);
                   }}
                 >
@@ -158,28 +154,86 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>    
-
+        </div>
       </div>
 
-      <div className="col-md-5 col-12 m-0 p-0 bg-white h-100 " style={{display:"none"}}>         
-              <img className="m-0 w-100 justify-content-end" src={si} alt="..." />        
-        </div>
-     
-      <div style={{paddingLeft:"40px",paddingRight:"40px",fontFamily: "Nunito"}}>
-        <h3 style={{paddingBottom:"20px",paddingTop:"20px",fontFamily: "Playfair Display"}}>About the Conference</h3>
-        <p style={{textAlign:"justify"}}>This conference be conducted jointly by CHRIST (Deemed to be University), Bangalore, India and Modern College of Business and Science, Muscat, Oman. It would provide an opportunity to spotlight research ideas to an international community as well as be a platform to get abreast on the latest trends in the field of Businesses and Computing Sciences.In the last three decades, numerous technologies have surfaced replacing the older ones and also getting themselves replaced rapidly, while on the other hand, alternate technologies with competitive affordability also have been produced swiftly. Therefore, the challenge for new technology is its sustainability and affordability. This conference aims in exploring research outputs that are bringing out new technologies that are both sustainable and affordable to the millions who consume them or make a commodity of them. </p>
-        <p style={{textAlign:"justify"}}>It aims to offer an international platform for academicians, researchers, engineers, entrepreneurs, industrial experts and budding research scholars around the world to share their research findings with global experts. Such gathering will also help the delegates to establish research or business relations as well as to find international linkage for future collaborations in their career path.</p>
-        <p style={{textAlign:"justify"}}>It aims to offer an international platform for academicians, researchers, engineers, entrepreneurs, industrial experts and budding research scholars around the world to share their research findings with global experts. Such gathering will also help the delegates to establish research or business relations as well as to find international linkage for future collaborations in their career path.</p>
-        <p style={{textAlign:"justify",paddingBottom:"20px"}}>This Conference will be carried out in a hybrid format, allowing world-scattered researchers, academicians, business and industry professionals, and policy makers to participate in this Conference. There will be two venues for the conference; Modern College of Business and Science, Muscat, Oman and CHRIST (Deemed to be University), Bangalore, India. </p>
+      <div
+        className="col-md-5 col-12 m-0 p-0 bg-white h-100 "
+        style={{ display: "none" }}
+      >
+        <img className="m-0 w-100 justify-content-end" src={si} alt="..." />
+      </div>
+
+      <div
+        style={{
+          paddingLeft: "40px",
+          paddingRight: "40px",
+          fontFamily: "Nunito",
+        }}
+      >
+        <h3
+          style={{
+            paddingBottom: "20px",
+            paddingTop: "20px",
+            fontFamily: "Playfair Display",
+          }}
+        >
+          About the Conference
+        </h3>
+        <p style={{ textAlign: "justify" }}>
+          This conference be conducted jointly by CHRIST (Deemed to be
+          University), Bangalore, India and Modern College of Business and
+          Science, Muscat, Oman. It would provide an opportunity to spotlight
+          research ideas to an international community as well as be a platform
+          to get abreast on the latest trends in the field of Businesses and
+          Computing Sciences.In the last three decades, numerous technologies
+          have surfaced replacing the older ones and also getting themselves
+          replaced rapidly, while on the other hand, alternate technologies with
+          competitive affordability also have been produced swiftly. Therefore,
+          the challenge for new technology is its sustainability and
+          affordability. This conference aims in exploring research outputs that
+          are bringing out new technologies that are both sustainable and
+          affordable to the millions who consume them or make a commodity of
+          them.{" "}
+        </p>
+        <p style={{ textAlign: "justify" }}>
+          It aims to offer an international platform for academicians,
+          researchers, engineers, entrepreneurs, industrial experts and budding
+          research scholars around the world to share their research findings
+          with global experts. Such gathering will also help the delegates to
+          establish research or business relations as well as to find
+          international linkage for future collaborations in their career path.
+        </p>
+        <p style={{ textAlign: "justify" }}>
+          It aims to offer an international platform for academicians,
+          researchers, engineers, entrepreneurs, industrial experts and budding
+          research scholars around the world to share their research findings
+          with global experts. Such gathering will also help the delegates to
+          establish research or business relations as well as to find
+          international linkage for future collaborations in their career path.
+        </p>
+        <p style={{ textAlign: "justify", paddingBottom: "20px" }}>
+          This Conference will be carried out in a hybrid format, allowing
+          world-scattered researchers, academicians, business and industry
+          professionals, and policy makers to participate in this Conference.
+          There will be two venues for the conference; Modern College of
+          Business and Science, Muscat, Oman and CHRIST (Deemed to be
+          University), Bangalore, India.{" "}
+        </p>
       </div>
 
       {/* important dates */}
-      <div id="dates" className="row m-0 p-0 text-light align-items-center nk-bg-7">
+      <div
+        id="dates"
+        className="row m-0 p-0 text-light align-items-center nk-bg-7"
+      >
         <div className="col-md-3 col-12 m-0 p-4 ">
           <h2>Important Dates</h2>
         </div>
-        <div className="col-md-9 col-12 m-0 p-4 nk-bg-1" style={{fontFamily:"Nunito"}}>
+        <div
+          className="col-md-9 col-12 m-0 p-4 nk-bg-1"
+          style={{ fontFamily: "Nunito" }}
+        >
           <div className="row m-0 p-4 align-items-center">
             <div className="col m-0 p-0">
               <h5 className="mt-4">
@@ -225,19 +279,24 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* presentation topics */}
       <div className="row m-0 p-0 text-light nk-bg-1 align-items-center">
         <div className="col-md-3 col-12 m-0 p-0 p-4">
           <h2>Presentation Topics </h2>
         </div>
-        <div className="col-md-9 col-12 m-0 p-0" style={{fontFamily:"Nunito"}}>
-          <div className="row m-0 p-0 align-items-end">          
-            <div className="col m-0 p-4 nk-bg-2 " style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/AI`; 
-              navigate(path);
-            }}>
+        <div
+          className="col-md-9 col-12 m-0 p-0"
+          style={{ fontFamily: "Nunito" }}
+        >
+          <div className="row m-0 p-0 align-items-end">
+            <div
+              className="col m-0 p-4 nk-bg-2 "
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/AI`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -246,15 +305,17 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-              Artificial Intelligence
-                
+                Artificial Intelligence
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-3 " style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/BT`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-3 "
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/BT`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -266,11 +327,14 @@ export default function Home() {
                 Blockchain Technology
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-4 " style={{cursor:"pointer", height:"200px"}}
-            onClick={(e) => {
-              let path = `/callForPapers/CC`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-4 "
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/CC`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -279,14 +343,17 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Cloud Computing 
+                Cloud Computing
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-5" style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/CS`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-5"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/CS`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -295,15 +362,18 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Cyber <br/>
+                Cyber <br />
                 Security
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-6" style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/DS`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-6"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/DS`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -312,20 +382,22 @@ export default function Home() {
                   paddingTop: "5rem",
                 }}
               >
-                Data <br/>
+                Data <br />
                 Science
               </h5>
             </div>
           </div>
           <div className="row m-0 p-0 align-items-end ">
-            <div className="col m-0 p-4 nk-bg-7" style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/EC`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-7"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/EC`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
-
                   fontWeight: "bold",
                   fontSize: "20px",
                   letterSpacing: "0.05rem",
@@ -335,11 +407,14 @@ export default function Home() {
                 E-Commerce
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-8" style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/HPCA`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-8"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/HPCA`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -351,11 +426,14 @@ export default function Home() {
                 Computer Architectures
               </h5>
             </div>
-            <div  className="col m-0 p-4 nk-bg-9" style={{cursor:"pointer", height:"200px"}}
-            onClick={(e) => {
-              let path = `/callForPapers/IMP`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-9"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/IMP`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -367,11 +445,14 @@ export default function Home() {
                 Image and Video Processing
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-10" style={{cursor:"pointer", height:"200px"}}
-            onClick={(e) => {
-              let path = `/callForPapers/PPD`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-10"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/PPD`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -383,11 +464,14 @@ export default function Home() {
                 Pandemic Prepardness and Digital Technology
               </h5>
             </div>
-            <div className="col m-0 p-4 nk-bg-11" style={{cursor:"pointer", height:"200px"}}
-             onClick={(e) => {
-              let path = `/callForPapers/PRC`; 
-              navigate(path);
-            }}>
+            <div
+              className="col m-0 p-4 nk-bg-11"
+              style={{ cursor: "pointer", height: "200px" }}
+              onClick={(e) => {
+                let path = `/callForPapers/PRC`;
+                navigate(path);
+              }}
+            >
               <h5
                 style={{
                   fontWeight: "bold",
@@ -405,17 +489,19 @@ export default function Home() {
 
       {/* keynote speakers */}
       <div>
-        <div className="p-4">
-         
-        </div>
-        <div id="experts"
+        <div className="p-4"></div>
+        <div
+          id="experts"
           className="row m-0 p-0 align-items-center "
           // style={{ height: "14rem" }}
         >
           <div className="col-md-3 col-12 m-0 p-0 text-center">
             <h3>KEYNOTE SPEAKERS</h3>
           </div>
-          <div className="col-md-9 col-12 m-0 p-0"style={{fontFamily:"Nunito"}}>
+          <div
+            className="col-md-9 col-12 m-0 p-0"
+            style={{ fontFamily: "Nunito" }}
+          >
             <div className="row m-0 p-0">
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-3 h-105">
                 <h5>Prof Dharm Singh</h5>
@@ -430,23 +516,22 @@ export default function Home() {
                 </p>
               </div>
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-4 h-105">
-                <h5>Dr. Mohammad S Khan   </h5>
+                <h5>Dr. Mohammad S Khan </h5>
                 <p>
-                Director of  Network Science and Analysis Lab (NSAL) <br />
-                Department of Computing <br />
-                East Tennessee State University <br />
-                Johnson City, TN  37614-1266, USA <br/>
-                {/* Email: adhoc.khan@gmail.com */}
-
+                  Director of Network Science and Analysis Lab (NSAL) <br />
+                  Department of Computing <br />
+                  East Tennessee State University <br />
+                  Johnson City, TN 37614-1266, USA <br />
+                  {/* Email: adhoc.khan@gmail.com */}
                 </p>
               </div>
               <div className="col-md-4 col m-0 p-4 text-light nk-bg-2 h-105">
                 <h5>Prof. Dr. Mario Jose Divan</h5>
                 <p>
-                Sr. Solutions Architect and Service Lead <br />
-                IOTG HEC Services - Intel Corporation <br />
-                Hillsboro, Oregon, USA. <br />
-                {/* Email: mario.jose.divan.koller@intel.com  */}
+                  Sr. Solutions Architect and Service Lead <br />
+                  IOTG HEC Services - Intel Corporation <br />
+                  Hillsboro, Oregon, USA. <br />
+                  {/* Email: mario.jose.divan.koller@intel.com  */}
                 </p>
               </div>
             </div>
