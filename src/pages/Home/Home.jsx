@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   const startTimer = () => {
-    const countdownDate = new Date("March 15,2023 00:00:00").getTime();
+    const countdownDate = new Date("March 08,2023 00:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;
@@ -99,7 +99,7 @@ export default function Home() {
           >
             ICCSST - 2023 <br />
             <div style={{ marginTop:"1rem" }}>
-          <span style={{ fontWeight:"600",fontSize:"1.7rem",marginTop:"1rem" }}>2023 IEEE FIRST INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES
+          <span style={{ fontWeight:"600",fontSize:"1.7rem",marginTop:"1rem" }}>INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCES
             AND SUSTAINABLE TECHNOLOGIES</span></div>
           </h1>
           <div style={{ marginTop:"1rem" }}>
@@ -112,11 +112,11 @@ export default function Home() {
               <div className="row m-0 my-2 p-0 p-4  nk-blue-bg justify-content-between">
                 <div className="col m-0 p-0">
                   <h5 className="m-0 p-0">Start</h5>
-                  <p className="m-0 p-0 fs-3">15.03.2023</p>
+                  <p className="m-0 p-0 fs-3">08.03.2023</p>
                 </div>
                 <div className="col m-0 p-0 text-end">
                   <h5 className="m-0 p-0">End</h5>
-                  <p className="m-0 p-0 fs-3">16.03.2023</p>
+                  <p className="m-0 p-0 fs-3">09.03.2023</p>
                 </div>
               </div>
             </div>
@@ -284,7 +284,7 @@ export default function Home() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4"> 15 & 16th March 2023</h5>
+              <h5 className="mt-4"> 08 & 09th March 2023</h5>
             </div>
           </div>
         </div>
