@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e988cac6.css",
-    "main.js": "/static/js/main.672e9552.js",
+    "main.js": "/static/js/main.1b65b763.js",
     "static/media/MCBS_Logo.png": "/static/media/MCBS_Logo.002fa13ba56822a6cfcb.png",
     "static/media/CaslonBold.ttf": "/static/media/CaslonBold.55e210e1518e1c66fea3.ttf",
     "static/media/person1.png": "/static/media/person1.f40da0ab574f62a10cf0.png",
@@ -14,10 +14,10 @@
     "index.html": "/index.html",
     "static/media/callpapers.svg": "/static/media/callpapers.f4125c8b61e85eaf087cd298e87abace.svg",
     "main.e988cac6.css.map": "/static/css/main.e988cac6.css.map",
-    "main.672e9552.js.map": "/static/js/main.672e9552.js.map"
+    "main.1b65b763.js.map": "/static/js/main.1b65b763.js.map"
   },
   "entrypoints": [
     "static/css/main.e988cac6.css",
-    "static/js/main.672e9552.js"
+    "static/js/main.1b65b763.js"
   ]
 }
