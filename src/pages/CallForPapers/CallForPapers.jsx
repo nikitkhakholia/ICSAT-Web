@@ -29,12 +29,12 @@ export default function CallForPapers() {
           </div>
           <div className="col-10" style={{ fontFamily: "Nunito" }}>
             <p>
-              The 2023 IEEE First International Conference on Computational
+              The First International Conference on Computational
               Science and Sustainable Technologies (ICCSST 2023) will be held
               parallelly at CHRIST (Deemed to be University), Bangalore, India
               and Modern College of Business and Science, Muscat, Oman. The
               technical program comprises of many symposia and a variety of
-              tutorials and workshops. IEEE ICCSST 2023 will also include an
+              tutorials and workshops. ICCSST 2023 will also include an
               attractive industry program aimed at practitioners, with keynotes
               and panels from prominent research, industry and government
               leaders, business and industry panels, and technological exhibits.
@@ -114,7 +114,7 @@ export default function CallForPapers() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4"> 15 & 16th March 2023</h5>
+              <h5 className="mt-4"> 08 & 09th March 2023</h5>
             </div>
           </div>
         </div>

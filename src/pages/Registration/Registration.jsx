@@ -42,7 +42,7 @@ export default function Registration() {
                 <div className="col-md-12 col-12 m-0 p-0">
                     <div className="row m-0 p-0">
                         <div className="col-md-6 col-12 m-0 p-4 h-100">
-                            <h3>IEEE Paper Submission Templates</h3>
+                            <h3>Paper Submission Templates</h3>
                             <p style={{ fontFamily: "Nunito" }}>
                                 <br /><a href="conference-template.docx" download>Paper Template - DOCUMENT FORMAT (.DOC)</a>
                                 <br /><a href="conference-latex-template.zip" download>Paper Template - LATEX FORMAT (.ZIP)</a>
