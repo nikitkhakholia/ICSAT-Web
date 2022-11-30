@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   const startTimer = () => {
-    const countdownDate = new Date("March 08,2023 00:00:00").getTime();
+    const countdownDate = new Date("May 08,2023 00:00:00").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;
@@ -112,11 +112,11 @@ export default function Home() {
               <div className="row m-0 my-2 p-0 p-4  nk-blue-bg justify-content-between">
                 <div className="col m-0 p-0">
                   <h5 className="m-0 p-0">Start</h5>
-                  <p className="m-0 p-0 fs-3">08.03.2023</p>
+                  <p className="m-0 p-0 fs-3">08.05.2023</p>
                 </div>
                 <div className="col m-0 p-0 text-end">
                   <h5 className="m-0 p-0">End</h5>
-                  <p className="m-0 p-0 fs-3">09.03.2023</p>
+                  <p className="m-0 p-0 fs-3">09.05.2023</p>
                 </div>
               </div>
             </div>
@@ -252,7 +252,7 @@ export default function Home() {
               </h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">20 December 2022</h5>
+              <h5 className="mt-4">20 February 2022</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -260,7 +260,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Acceptance Notification</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">15 January 2023</h5>
+              <h5 className="mt-4">15 March 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -268,7 +268,7 @@ export default function Home() {
               <h5 className="mt-4">Last date for Camera Ready paper</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">15 February 2023</h5>
+              <h5 className="mt-4">15 April 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -276,7 +276,7 @@ export default function Home() {
               <h5 className="mt-4">Date for Registration</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">01 March 2023</h5>
+              <h5 className="mt-4">01 May 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -284,7 +284,7 @@ export default function Home() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4"> 08 & 09th March 2023</h5>
+              <h5 className="mt-4"> 08 & 09th May 2023</h5>
             </div>
           </div>
         </div>

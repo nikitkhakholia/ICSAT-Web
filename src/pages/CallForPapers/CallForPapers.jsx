@@ -82,7 +82,7 @@ export default function CallForPapers() {
               </h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">20 December 2022</h5>
+              <h5 className="mt-4">20 February 2022</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -90,7 +90,7 @@ export default function CallForPapers() {
               <h5 className="mt-4">Date for Acceptance Notification</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">15 January 2023</h5>
+              <h5 className="mt-4">15 March 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -98,7 +98,7 @@ export default function CallForPapers() {
               <h5 className="mt-4">Last date for Camera Ready paper</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">15 February 2023</h5>
+              <h5 className="mt-4">15 April 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -106,7 +106,7 @@ export default function CallForPapers() {
               <h5 className="mt-4">Date for Registration</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4">01 March 2023</h5>
+              <h5 className="mt-4">01 May 2023</h5>
             </div>
           </div>
           <div className="row m-0 p-4 align-items-center">
@@ -114,7 +114,7 @@ export default function CallForPapers() {
               <h5 className="mt-4">Conference Date</h5>
             </div>
             <div className="col m-0 p-0 text-end">
-              <h5 className="mt-4"> 08 & 09th March 2023</h5>
+              <h5 className="mt-4"> 08 & 09th May 2023</h5>
             </div>
           </div>
         </div>
