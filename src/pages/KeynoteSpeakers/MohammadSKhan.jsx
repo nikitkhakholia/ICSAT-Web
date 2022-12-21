@@ -17,7 +17,7 @@ export default function MohammadSKhan() {
             <div class="container-fluid" style={{fontFamily:"Nunito"}}>
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <p>Dr. Mohammad S. Khan (SM’ 19) is currently an Director of Network Science and Analysis Lab
+                        <p>Dr. Mohammad S. Khan (SM’ 19) is currently a Director of the Network Science and Analysis Lab
                             (NSAL), Department of Computing at East Tennessee State University USA. He received his
                             M.Sc. and Ph.D. in Computer Science and Computer Engineering from the University of
                             Louisville, Kentucky, USA, in 2011 and 2013, respectively. His primary area of research is in

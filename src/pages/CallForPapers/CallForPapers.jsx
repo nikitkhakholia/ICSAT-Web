@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import i1 from "../../assets/callpapers.svg";
 import { scroller } from "react-scroll";
 import { useLocation } from "react-router-dom";
 
 export default function CallForPapers() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
   const location = useLocation();
   const id = location.pathname.split("/")[2];
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function CallForPapers() {
           </div>
           <div className="col-10" style={{ fontFamily: "Nunito" }}>
             <p>
-              The First International Conference on Computational
+              {/* The First International Conference on Computational
               Science and Sustainable Technologies (ICCSST 2023) will be held
               parallelly at CHRIST (Deemed to be University), Bangalore, India
               and Modern College of Business and Science, Muscat, Oman. The
@@ -37,7 +37,16 @@ export default function CallForPapers() {
               tutorials and workshops. ICCSST 2023 will also include an
               attractive industry program aimed at practitioners, with keynotes
               and panels from prominent research, industry and government
-              leaders, business and industry panels, and technological exhibits.
+              leaders, business and industry panels, and technological exhibits. */}
+
+              The First International Conference on Computational Science and Sustainable 
+              Technologies (ICCSST 2023) will be held parallelly at CHRIST (Deemed to be University), 
+              Bangalore, India, and Modern College of Business and Science, Muscat, Oman. 
+              The technical program comprises many symposia and a variety of tutorials and workshops. 
+              ICCSST 2023 will also include an attractive industry program aimed at practitioners,
+              with keynotes and panels from prominent research, industry, and government leaders, 
+              business and industry panels, and technological exhibits.
+
             </p>
           </div>
         </div>
@@ -241,7 +250,7 @@ export default function CallForPapers() {
             processor architecture, Application modeling and mapping schemes for
             multicore/SoC systems, Multicore computing and programming
             techniques, Power-efficient architectures and techniques for
-            multicore/SoC systems, High performance software systems and its
+            multicore/SoC systems, High-performance software systems and its
             applications, such as agent systems.
           </div>
         </div>
@@ -278,7 +287,7 @@ export default function CallForPapers() {
             digital recorders; global positioning systems; mobile phone
             applications; quick response codes Clinical management: Artificial
             intelligence for diagnostics; machine learning; virtual care or
-            telemedicine platforms Countries experiences and innovations.
+            telemedicine platforms Countries' experiences and innovations.
           </div>
         </div>
         <div className="row m-0 p-0" id="PRC">
@@ -295,7 +304,7 @@ export default function CallForPapers() {
           >
             Probabilistic Texture Synthesis, Benchmarking, 3D Data Modelling,
             Spatial Data Modelling, Probabilistic Expert Systems, Statistical
-            Pattern Recognition, Probabilistic Neural Networks, Content Based
+            Pattern Recognition, Probabilistic Neural Networks, Content-Based
             Image Retrieval (CBIR), Dynamic Textures, Multidimensional Texture
             Modelling Multispectral Textures, Texture Segmentation, Illumination
             and Rotation Invariance, Medical Image Recognition, Classification
@@ -347,8 +356,8 @@ export default function CallForPapers() {
             style={{ fontFamily: "Nunito" }}
           >
             Smart Grid Systems, Smart Cities, IoT Architectures, Human-object
-            Interations, Interoperability of IoTs, Cyberphysical Systems.
-            WIRELESS COMMUNICATIONS : Broadcast Channels and Information Theory,
+            Interactions, Interoperability of IoTs, Cyberphysical Systems.
+            WIRELESS COMMUNICATIONS: Broadcast Channels and Information Theory,
             Cooperative Networking, Emerging Wireless Standards, Heterogeneous
             networks (HetNets), MIMO, LTE OFDM Modulation, Personal Area
             Networks, OFDMA, 4G Cellular, 5G Cellular, SDMA, Smart Antennas,

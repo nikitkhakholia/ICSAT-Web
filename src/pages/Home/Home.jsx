@@ -192,7 +192,7 @@ export default function Home() {
           About the Conference
         </h3>
         <p style={{ textAlign: "justify" }}>
-          This conference be conducted jointly by CHRIST (Deemed to be
+          {/* This conference be conducted jointly by CHRIST (Deemed to be
           University), Bangalore, India and Modern College of Business and
           Science, Muscat, Oman. It would provide an opportunity to spotlight
           research ideas to an international community as well as be a platform
@@ -205,31 +205,52 @@ export default function Home() {
           affordability. This conference aims in exploring research outputs that
           are bringing out new technologies that are both sustainable and
           affordable to the millions who consume them or make a commodity of
-          them.{" "}
+          them. */}
+          
+          
+          This conference is conducted jointly by CHRIST (Deemed to be University), 
+          Bangalore, India, and Modern College of Business and Science, Muscat, Oman. 
+          It would provide an opportunity to spotlight research ideas to an international 
+          community as well as be a platform to get abreast on the latest trends in the field 
+          of Business and Computing Sciences. In the last three decades, numerous technologies 
+          have surfaced replacing the older ones and also getting themselves replaced rapidly, 
+          while on the other hand, alternate technologies with competitive affordability also 
+          have been produced swiftly. Therefore, the challenge for new technology is its 
+          sustainability and affordability. This conference aims in exploring research outputs
+           that are bringing out new technologies that are both sustainable and affordable to 
+           the millions who consume them or make a commodity of them.{" "}
         </p>
         <p style={{ textAlign: "justify" }}>
-          It aims to offer an international platform for academicians,
+          {/* It aims to offer an international platform for academicians,
           researchers, engineers, entrepreneurs, industrial experts and budding
           research scholars around the world to share their research findings
           with global experts. Such gathering will also help the delegates to
           establish research or business relations as well as to find
-          international linkage for future collaborations in their career path.
+          international linkage for future collaborations in their career path. */}
+
+          It aims to offer an international platform for academicians, 
+          researchers, engineers, entrepreneurs, industry experts, and budding 
+          research scholars around the world to share their research findings with
+          global experts. Such a gathering will also help the delegates to establish 
+          research or business relations as well as to find international linkage for 
+          future collaborations in their career path.
+
         </p>
-        <p style={{ textAlign: "justify" }}>
-          It aims to offer an international platform for academicians,
-          researchers, engineers, entrepreneurs, industrial experts and budding
-          research scholars around the world to share their research findings
-          with global experts. Such gathering will also help the delegates to
-          establish research or business relations as well as to find
-          international linkage for future collaborations in their career path.
-        </p>
+      
         <p style={{ textAlign: "justify", paddingBottom: "20px" }}>
-          This Conference will be carried out in a hybrid format, allowing
+          {/* This Conference will be carried out in a hybrid format, allowing
           world-scattered researchers, academicians, business and industry
           professionals, and policy makers to participate in this Conference.
           There will be two venues for the conference; Modern College of
           Business and Science, Muscat, Oman and CHRIST (Deemed to be
-          University), Bangalore, India.{" "}
+          University), Bangalore, India. */}
+
+          This Conference will be carried out in a hybrid format, allowing world-scattered 
+          researchers, academicians, business and industry professionals, and policymakers 
+          to participate in this Conference. There will be two venues for the conference; 
+          Modern College of Business and Science, Muscat, Oman, and CHRIST (Deemed to be University), 
+          Bangalore, India.
+          {" "}
         </p>
       </div>
 
@@ -248,7 +269,7 @@ export default function Home() {
           <div className="row m-0 p-4 align-items-center">
             <div className="col m-0 p-0">
               <h5 className="mt-4">
-                Last date for submission of Full Length paper
+                Last date for submission of Full-Length paper
               </h5>
             </div>
             <div className="col m-0 p-0 text-end">
